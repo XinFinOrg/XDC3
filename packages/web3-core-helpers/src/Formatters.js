@@ -502,14 +502,22 @@ export const outputPostFormatter = (post) => {
  * @throws {Error}
  */
 export const inputAddressFormatter = (address) => {
+    console.log('xinfin custom prefix@"version": "1.0.0-beta.48"');
+    if (address.substring(0,3) === "xdc") {
+        address = "0x" + address.substring(3);
+    }
     const iban = new Iban(address);
 
     if (iban.isValid() && iban.isDirect()) {
-        return iban.toAddress().toLowerCase();
+        return 'xdc' + iban.toAddress().toLowerCase();
     }
 
     if (Utils.isAddress(address)) {
-        return `0x${address.toLowerCase().replace('0x', '')}`;
+        if (address.substring(0,2) === "0x") {
+            return `xdc${address.toLowerCase().replace('0x', '')}`;
+        } else {
+            return `xdc${address.toLowerCase()}`;
+        }
     }
 
     throw new Error(
