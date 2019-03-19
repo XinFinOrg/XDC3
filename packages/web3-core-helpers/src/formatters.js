@@ -400,11 +400,20 @@ var outputPostFormatter = function(post){
 };
 
 var inputAddressFormatter = function (address) {
+    console.log('XinFin custom prefix@"version": "1.0.0-beta.36"');
+    if (address.substring(0,3) === "xdc") {
+        address = "0x" + address.substring(3);
+    }
     var iban = new Iban(address);
     if (iban.isValid() && iban.isDirect()) {
         return iban.toAddress().toLowerCase();
+        return 'xdc' + iban.toAddress().toLowerCase();
     } else if (utils.isAddress(address)) {
-        return '0x' + address.toLowerCase().replace('0x','');
+        if (address.substring(0,2) === "0x") {
+            return `xdc${address.toLowerCase().replace('0x', '')}`;
+        } else {
+            return `xdc${address.toLowerCase()}`;
+        }
     }
     throw new Error('Provided address "'+ address +'" is invalid, the capitalization checksum test failed, or its an indrect IBAN address which can\'t be converted.');
 };
