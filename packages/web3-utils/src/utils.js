@@ -233,7 +233,7 @@ var hexToNumber = function (value) {
     if (!value) {
         return value;
     }
-
+    
     return toBN(value).toNumber();
 };
 

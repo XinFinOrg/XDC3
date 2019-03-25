@@ -185,7 +185,7 @@ var outputTransactionFormatter = function (tx){
     if(tx.from) {
         tx.from = utils.toChecksumAddress(tx.from);
     }
-
+    
     return tx;
 };
 
