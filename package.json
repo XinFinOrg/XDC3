@@ -1,8 +1,8 @@
 {
-  "name": "web3",
-  "namespace": "ethereum",
+  "name": "xdc3",
+  "namespace": "xinfinorg",
   "version": "1.0.0-beta.36",
-  "description": "Ethereum JavaScript API wrapper repository",
+  "description": "XinFin JavaScript API wrapper repository",
   "license": "LGPL-3.0",
   "main": "./packages/web3/src/index.js",
   "directories": {
@@ -22,14 +22,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ethereum/web3.js.git"
+    "url": "https://github.com/xinfinorg/web3.js.git"
   },
-  "homepage": "https://github.com/ethereum/web3.js",
+  "homepage": "https://github.com/xinfinorg/web3.js",
   "bugs": {
-    "url    ": "https://github.com/ethereum/web3.js/issues"
+    "url    ": "https://github.com/xinfinorg/web3.js/issues"
   },
   "keywords": [
-    "Ethereum",
+    "XinFin",
     "JavaScript",
     "API"
   ],

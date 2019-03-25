@@ -85,6 +85,9 @@ var toTwosComplement = function (number) {
  * @return {Boolean}
  */
 var isAddress = function (address) {
+    if (address.substring(0,3) === "xdc") {
+        address = "0x" + address.substring(3);
+    }
     // check if it has the basic requirements of an address
     if (!/^(0x)?[0-9a-f]{40}$/i.test(address)) {
         return false;
