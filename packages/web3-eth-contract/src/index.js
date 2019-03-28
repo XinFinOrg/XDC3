@@ -410,7 +410,7 @@ Contract.prototype._encodeMethodABI = function _encodeMethodABI() {
     var signature = false,
         paramsABI = this._parent.options.jsonInterface.filter(function (json) {
             return ((methodSignature === 'constructor' && json.type === methodSignature) ||
-                ((json.signature === methodSignature || json.signature === methodSignature.replace('0x','') || json.name === methodSignature) && json.type === 'function'));
+                ((json.signature === methodSignature || json.signature === methodSignature.replace('xdc','') || json.name === methodSignature) && json.type === 'function'));
         }).map(function (json) {
             var inputLength = (_.isArray(json.inputs)) ? json.inputs.length : 0;
 
@@ -423,7 +423,7 @@ Contract.prototype._encodeMethodABI = function _encodeMethodABI() {
             }
             return _.isArray(json.inputs) ? json.inputs : [];
         }).map(function (inputs) {
-            return abi.encodeParameters(inputs, args).replace('0x','');
+            return abi.encodeParameters(inputs, args).replace('xdc','');
         })[0] || '';
 
     // return constructor
@@ -533,7 +533,7 @@ Contract.prototype._generateEventOptions = function() {
             name: 'ALLEVENTS',
             jsonInterface: this.options.jsonInterface
         } : this.options.jsonInterface.find(function (json) {
-            return (json.type === 'event' && (json.name === event || json.signature === '0x'+ event.replace('0x','')));
+            return (json.type === 'event' && (json.name === event || json.signature === 'xdc'+ event.replace('xdc','')));
         });
 
     if (!event) {

@@ -43,14 +43,14 @@ var isNot = function(value) {
 
 var trimLeadingZero = function (hex) {
     while (hex && hex.startsWith('0x0')) {
-        hex = '0x' + hex.slice(3);
+        hex = 'xdc' + hex.slice(3);
     }
     return hex;
 };
 
 var makeEven = function (hex) {
     if(hex.length % 2 === 1) {
-        hex = hex.replace('0x', '0x0');
+        hex = hex.replace('xdc', '0x0');
     }
     return hex;
 };
@@ -165,9 +165,9 @@ Accounts.prototype.signTransaction = function signTransaction(tx, privateKey, ca
             tx = helpers.formatters.inputCallFormatter(tx);
 
             var transaction = tx;
-            transaction.to = tx.to || '0x';
-            transaction.data = tx.data || '0x';
-            transaction.value = tx.value || '0x';
+            transaction.to = tx.to || 'xdc';
+            transaction.data = tx.data || 'xdc';
+            transaction.value = tx.value || 'xdc';
             transaction.chainId = utils.numberToHex(tx.chainId);
 
             var rlpEncoded = RLP.encode([
@@ -177,14 +177,14 @@ Accounts.prototype.signTransaction = function signTransaction(tx, privateKey, ca
                 transaction.to.toLowerCase(),
                 Bytes.fromNat(transaction.value),
                 transaction.data,
-                Bytes.fromNat(transaction.chainId || "0x1"),
-                "0x",
-                "0x"]);
+                Bytes.fromNat(transaction.chainId || "xdc1"),
+                "xdc",
+                "xdc"]);
 
 
             var hash = Hash.keccak256(rlpEncoded);
 
-            var signature = Account.makeSigner(Nat.toNumber(transaction.chainId || "0x1") * 2 + 35)(Hash.keccak256(rlpEncoded), privateKey);
+            var signature = Account.makeSigner(Nat.toNumber(transaction.chainId || "xdc1") * 2 + 35)(Hash.keccak256(rlpEncoded), privateKey);
 
             var rawTx = RLP.decode(rlpEncoded).slice(0, 6).concat(Account.decodeSignature(signature));
 
@@ -236,7 +236,7 @@ Accounts.prototype.recoverTransaction = function recoverTransaction(rawTx) {
     var values = RLP.decode(rawTx);
     var signature = Account.encodeSignature(values.slice(6,9));
     var recovery = Bytes.toNumber(values[6]);
-    var extraData = recovery < 35 ? [] : [Bytes.fromNumber((recovery - 35) >> 1), "0x", "0x"];
+    var extraData = recovery < 35 ? [] : [Bytes.fromNumber((recovery - 35) >> 1), "xdc", "xdc"];
     var signingData = values.slice(0,6).concat(extraData);
     var signingDataHex = RLP.encode(signingData);
     return Account.recover(Hash.keccak256(signingDataHex), signature);
@@ -322,13 +322,13 @@ Accounts.prototype.decrypt = function (v3Keystore, password, nonStrict) {
 
     var ciphertext = new Buffer(json.crypto.ciphertext, 'hex');
 
-    var mac = utils.sha3(Buffer.concat([ derivedKey.slice(16, 32), ciphertext ])).replace('0x','');
+    var mac = utils.sha3(Buffer.concat([ derivedKey.slice(16, 32), ciphertext ])).replace('xdc','');
     if (mac !== json.crypto.mac) {
         throw new Error('Key derivation failed - possibly wrong password');
     }
 
     var decipher = cryp.createDecipheriv(json.crypto.cipher, derivedKey.slice(0, 16), new Buffer(json.crypto.cipherparams.iv, 'hex'));
-    var seed = '0x'+ Buffer.concat([ decipher.update(ciphertext), decipher.final() ]).toString('hex');
+    var seed = 'xdc'+ Buffer.concat([ decipher.update(ciphertext), decipher.final() ]).toString('hex');
 
     return this.privateKeyToAccount(seed);
 };
@@ -367,14 +367,14 @@ Accounts.prototype.encrypt = function (privateKey, password, options) {
         throw new Error('Unsupported cipher');
     }
 
-    var ciphertext = Buffer.concat([ cipher.update(new Buffer(account.privateKey.replace('0x',''), 'hex')), cipher.final() ]);
+    var ciphertext = Buffer.concat([ cipher.update(new Buffer(account.privateKey.replace('xdc',''), 'hex')), cipher.final() ]);
 
-    var mac = utils.sha3(Buffer.concat([ derivedKey.slice(16, 32), new Buffer(ciphertext, 'hex') ])).replace('0x','');
+    var mac = utils.sha3(Buffer.concat([ derivedKey.slice(16, 32), new Buffer(ciphertext, 'hex') ])).replace('xdc','');
 
     return {
         version: 3,
         id: uuid.v4({ random: options.uuid || cryp.randomBytes(16) }),
-        address: account.address.toLowerCase().replace('0x',''),
+        address: account.address.toLowerCase().replace('xdc',''),
         crypto: {
             ciphertext: ciphertext.toString('hex'),
             cipherparams: {

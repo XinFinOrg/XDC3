@@ -131,7 +131,7 @@ Iban.fromAddress = function (address) {
         throw new Error('Provided address is not a valid address: '+ address);
     }
 
-    address = address.replace('0x','').replace('0X','');
+    address = address.replace('xdc','').replace('XDC','');
 
     var asBn = new BigNumber(address, 16);
     var base36 = asBn.toString(36);

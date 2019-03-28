@@ -74,7 +74,7 @@ var toBN = function(number){
  * @return {String}
  */
 var toTwosComplement = function (number) {
-    return '0x'+ toBN(number).toTwos(256).toString(16, 64);
+    return 'xdc'+ toBN(number).toTwos(256).toString(16, 64);
 };
 
 /**
@@ -85,14 +85,11 @@ var toTwosComplement = function (number) {
  * @return {Boolean}
  */
 var isAddress = function (address) {
-    if (address.substring(0,3) === "xdc") {
-        address = "0x" + address.substring(3);
-    }
     // check if it has the basic requirements of an address
-    if (!/^(0x)?[0-9a-f]{40}$/i.test(address)) {
+    if (!/^(xdc)?[0-9a-f]{40}$/i.test(address)) {
         return false;
         // If it's ALL lowercase or ALL upppercase
-    } else if (/^(0x|0X)?[0-9a-f]{40}$/.test(address) || /^(0x|0X)?[0-9A-F]{40}$/.test(address)) {
+    } else if (/^(xdc|XDC)?[0-9a-f]{40}$/.test(address) || /^(xdc|XDC)?[0-9A-F]{40}$/.test(address)) {
         return true;
         // Otherwise check each case
     } else {
@@ -111,8 +108,8 @@ var isAddress = function (address) {
  */
 var checkAddressChecksum = function (address) {
     // Check each case
-    address = address.replace(/^0x/i,'');
-    var addressHash = sha3(address.toLowerCase()).replace(/^0x/i,'');
+    address = address.replace(/^xdc/i,'');
+    var addressHash = sha3(address.toLowerCase()).replace(/^xdc/i,'');
 
     for (var i = 0; i < 40; i++ ) {
         // the nth letter should be uppercase if the nth digit of casemap is 1
@@ -133,12 +130,12 @@ var checkAddressChecksum = function (address) {
  * @returns {String} right aligned string
  */
 var leftPad = function (string, chars, sign) {
-    var hasPrefix = /^0x/i.test(string) || typeof string === 'number';
-    string = string.toString(16).replace(/^0x/i,'');
+    var hasPrefix = /^xdc/i.test(string) || typeof string === 'number';
+    string = string.toString(16).replace(/^xdc/i,'');
 
     var padding = (chars - string.length + 1 >= 0) ? chars - string.length + 1 : 0;
 
-    return (hasPrefix ? '0x' : '') + new Array(padding).join(sign ? sign : "0") + string;
+    return (hasPrefix ? 'xdc' : '') + new Array(padding).join(sign ? sign : "0") + string;
 };
 
 /**
@@ -151,12 +148,12 @@ var leftPad = function (string, chars, sign) {
  * @returns {String} right aligned string
  */
 var rightPad = function (string, chars, sign) {
-    var hasPrefix = /^0x/i.test(string) || typeof string === 'number';
-    string = string.toString(16).replace(/^0x/i,'');
+    var hasPrefix = /^xdc/i.test(string) || typeof string === 'number';
+    string = string.toString(16).replace(/^xdc/i,'');
 
     var padding = (chars - string.length + 1 >= 0) ? chars - string.length + 1 : 0;
 
-    return (hasPrefix ? '0x' : '') + string + (new Array(padding).join(sign ? sign : "0"));
+    return (hasPrefix ? 'xdc' : '') + string + (new Array(padding).join(sign ? sign : "0"));
 };
 
 
@@ -185,7 +182,7 @@ var utf8ToHex = function(str) {
         // }
     }
 
-    return "0x" + hex;
+    return "xdc" + hex;
 };
 
 /**
@@ -201,7 +198,7 @@ var hexToUtf8 = function(hex) {
 
     var str = "";
     var code = 0;
-    hex = hex.replace(/^0x/i,'');
+    hex = hex.replace(/^xdc/i,'');
 
     // remove 00 padding from either side
     hex = hex.replace(/^(?:00)*/,'');
@@ -233,7 +230,7 @@ var hexToNumber = function (value) {
     if (!value) {
         return value;
     }
-    
+
     return toBN(value).toNumber();
 };
 
@@ -270,7 +267,7 @@ var numberToHex = function (value) {
     var number = toBN(value);
     var result = number.toString(16);
 
-    return number.lt(new BN(0)) ? '-0x' + result.substr(1) : '0x' + result;
+    return number.lt(new BN(0)) ? '-xdc' + result.substr(1) : 'xdc' + result;
 };
 
 
@@ -290,7 +287,7 @@ var bytesToHex = function(bytes) {
         hex.push((bytes[i] & 0xF).toString(16));
         /* jshint ignore:end */
     }
-    return '0x'+ hex.join("");
+    return 'xdc'+ hex.join("");
 };
 
 /**
@@ -309,7 +306,7 @@ var hexToBytes = function(hex) {
         throw new Error('Given value "'+ hex +'" is not a valid hex string.');
     }
 
-    hex = hex.replace(/^0x/i,'');
+    hex = hex.replace(/^xdc/i,'');
 
     for (var bytes = [], c = 0; c < hex.length; c += 2)
         bytes.push(parseInt(hex.substr(c, 2), 16));
@@ -330,7 +327,7 @@ var toHex = function (value, returnType) {
     /*jshint maxcomplexity: false */
 
     if (isAddress(value)) {
-        return returnType ? 'address' : '0x'+ value.toLowerCase().replace(/^0x/i,'');
+        return returnType ? 'address' : 'xdc'+ value.toLowerCase().replace(/^xdc/i,'');
     }
 
     if (_.isBoolean(value)) {
@@ -344,9 +341,9 @@ var toHex = function (value, returnType) {
 
     // if its a negative number, pass it through numberToHex
     if (_.isString(value)) {
-        if (value.indexOf('-0x') === 0 || value.indexOf('-0X') === 0) {
+        if (value.indexOf('-xdc') === 0 || value.indexOf('-xdc') === 0) {
             return returnType ? 'int256' : numberToHex(value);
-        } else if(value.indexOf('0x') === 0 || value.indexOf('0X') === 0) {
+        } else if(value.indexOf('xdc') === 0 || value.indexOf('XDC') === 0) {
             return returnType ? 'bytes' : value;
         } else if (!isFinite(value)) {
             return returnType ? 'string' : utf8ToHex(value);
@@ -365,7 +362,7 @@ var toHex = function (value, returnType) {
  * @returns {Boolean}
  */
 var isHexStrict = function (hex) {
-    return ((_.isString(hex) || _.isNumber(hex)) && /^(-)?0x[0-9a-f]*$/i.test(hex));
+    return ((_.isString(hex) || _.isNumber(hex)) && /^(-)?xdc[0-9a-f]*$/i.test(hex));
 };
 
 /**
@@ -376,7 +373,7 @@ var isHexStrict = function (hex) {
  * @returns {Boolean}
  */
 var isHex = function (hex) {
-    return ((_.isString(hex) || _.isNumber(hex)) && /^(-0x|0x)?[0-9a-f]*$/i.test(hex));
+    return ((_.isString(hex) || _.isNumber(hex)) && /^(-xdc|xdc)?[0-9a-f]*$/i.test(hex));
 };
 
 
@@ -390,9 +387,9 @@ var isHex = function (hex) {
  * @return {Boolean}
  */
 var isBloom = function (bloom) {
-    if (!/^(0x)?[0-9a-f]{512}$/i.test(bloom)) {
+    if (!/^(xdc)?[0-9a-f]{512}$/i.test(bloom)) {
         return false;
-    } else if (/^(0x)?[0-9a-f]{512}$/.test(bloom) || /^(0x)?[0-9A-F]{512}$/.test(bloom)) {
+    } else if (/^(xdc)?[0-9a-f]{512}$/.test(bloom) || /^(xdc)?[0-9A-F]{512}$/.test(bloom)) {
         return true;
     }
     return false;
@@ -408,9 +405,9 @@ var isBloom = function (bloom) {
  * @return {Boolean}
  */
 var isTopic = function (topic) {
-    if (!/^(0x)?[0-9a-f]{64}$/i.test(topic)) {
+    if (!/^(xdc)?[0-9a-f]{64}$/i.test(topic)) {
         return false;
-    } else if (/^(0x)?[0-9a-f]{64}$/.test(topic) || /^(0x)?[0-9A-F]{64}$/.test(topic)) {
+    } else if (/^(xdc)?[0-9a-f]{64}$/.test(topic) || /^(xdc)?[0-9A-F]{64}$/.test(topic)) {
         return true;
     }
     return false;
@@ -428,7 +425,7 @@ var isTopic = function (topic) {
 var SHA3_NULL_S = '0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470';
 
 var sha3 = function (value) {
-    if (isHexStrict(value) && /^0x/i.test((value).toString())) {
+    if (isHexStrict(value) && /^xdc/i.test((value).toString())) {
         value = hexToBytes(value);
     }
 

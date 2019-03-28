@@ -198,7 +198,7 @@ ABICoder.prototype.mapStructToCoderFormat = function (struct) {
  * @return {String} The encoded ABI for this function call
  */
 ABICoder.prototype.encodeFunctionCall = function (jsonInterface, params) {
-    return this.encodeFunctionSignature(jsonInterface) + this.encodeParameters(jsonInterface.inputs, params).replace('0x', '');
+    return this.encodeFunctionSignature(jsonInterface) + this.encodeParameters(jsonInterface.inputs, params).replace('xdc', '');
 };
 
 /**
@@ -222,17 +222,17 @@ ABICoder.prototype.decodeParameter = function (type, bytes) {
  * @return {Array} array of plain params
  */
 ABICoder.prototype.decodeParameters = function (outputs, bytes) {
-    if (!bytes || bytes === '0x' || bytes === '0X') {
+    if (!bytes || bytes === 'xdc' || bytes === 'xdc') {
         throw new Error('Returned values aren\'t valid, did it run Out of Gas?');
     }
 
-    var res = ethersAbiCoder.decode(this.mapTypes(outputs), '0x' + bytes.replace(/0x/i, ''));
+    var res = ethersAbiCoder.decode(this.mapTypes(outputs), 'xdc' + bytes.replace(/0x/i, ''));
     var returnValue = new Result();
     returnValue.__length__ = 0;
 
     outputs.forEach(function (output, i) {
         var decodedValue = res[returnValue.__length__];
-        decodedValue = (decodedValue === '0x') ? null : decodedValue;
+        decodedValue = (decodedValue === 'xdc') ? null : decodedValue;
 
         returnValue[i] = decodedValue;
 

@@ -185,7 +185,7 @@ var outputTransactionFormatter = function (tx){
     if(tx.from) {
         tx.from = utils.toChecksumAddress(tx.from);
     }
-    
+
     return tx;
 };
 
@@ -273,7 +273,7 @@ var inputLogFormatter = function(options) {
 
         value = String(value);
 
-        if(value.indexOf('0x') === 0)
+        if(value.indexOf('xdc') === 0)
             return value;
         else
             return utils.fromUtf8(value);
@@ -316,8 +316,8 @@ var outputLogFormatter = function(log) {
     if(typeof log.blockHash === 'string' &&
        typeof log.transactionHash === 'string' &&
        typeof log.logIndex === 'string') {
-        var shaId = utils.sha3(log.blockHash.replace('0x','') + log.transactionHash.replace('0x','') + log.logIndex.replace('0x',''));
-        log.id = 'log_'+ shaId.replace('0x','').substr(0,8);
+        var shaId = utils.sha3(log.blockHash.replace('xdc','') + log.transactionHash.replace('xdc','') + log.logIndex.replace('xdc',''));
+        log.id = 'log_'+ shaId.replace('xdc','').substr(0,8);
     } else if(!log.id) {
         log.id = null;
     }
@@ -362,7 +362,7 @@ var inputPostFormatter = function(post) {
     // format the following options
     post.topics = post.topics.map(function(topic){
         // convert only if not hex
-        return (topic.indexOf('0x') === 0) ? topic : utils.fromUtf8(topic);
+        return (topic.indexOf('xdc') === 0) ? topic : utils.fromUtf8(topic);
     });
 
     return post;
@@ -400,20 +400,11 @@ var outputPostFormatter = function(post){
 };
 
 var inputAddressFormatter = function (address) {
-    console.log('XinFin custom prefix@"version": "1.0.0-beta.36"');
-    if (address.substring(0,3) === "xdc") {
-        address = "0x" + address.substring(3);
-    }
     var iban = new Iban(address);
     if (iban.isValid() && iban.isDirect()) {
         return iban.toAddress().toLowerCase();
-        return 'xdc' + iban.toAddress().toLowerCase();
     } else if (utils.isAddress(address)) {
-        if (address.substring(0,2) === "0x") {
-            return `xdc${address.toLowerCase().replace('0x', '')}`;
-        } else {
-            return `xdc${address.toLowerCase()}`;
-        }
+        return 'xdc' + address.toLowerCase().replace('xdc','');
     }
     throw new Error('Provided address "'+ address +'" is invalid, the capitalization checksum test failed, or its an indrect IBAN address which can\'t be converted.');
 };

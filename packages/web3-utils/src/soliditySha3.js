@@ -88,7 +88,7 @@ var _solidityPack = function (type, value, arraySize) {
 
     if (type === 'bytes') {
 
-        if (value.replace(/^0x/i,'').length % 2 !== 0) {
+        if (value.replace(/^xdc/i,'').length % 2 !== 0) {
             throw new Error('Invalid bytes characters '+ value.length);
         }
 
@@ -124,7 +124,7 @@ var _solidityPack = function (type, value, arraySize) {
             size = 32;
         }
 
-        if (size < 1 || size > 32 || size < value.replace(/^0x/i,'').length / 2 ) {
+        if (size < 1 || size > 32 || size < value.replace(/^xdc/i,'').length / 2 ) {
             throw new Error('Invalid bytes' + size +' for '+ value);
         }
 
@@ -195,7 +195,7 @@ var _processSoliditySha3Args = function (arg) {
         }
     }
 
-    if ((type.startsWith('int') || type.startsWith('uint')) &&  typeof value === 'string' && !/^(-)?0x/i.test(value)) {
+    if ((type.startsWith('int') || type.startsWith('uint')) &&  typeof value === 'string' && !/^(-)?xdc/i.test(value)) {
         value = new BN(value);
     }
 
@@ -212,12 +212,12 @@ var _processSoliditySha3Args = function (arg) {
 
     if (_.isArray(value)) {
         hexArg = value.map(function (val) {
-            return _solidityPack(type, val, arraySize).toString('hex').replace('0x','');
+            return _solidityPack(type, val, arraySize).toString('hex').replace('xdc','');
         });
         return hexArg.join('');
     } else {
         hexArg = _solidityPack(type, value, arraySize);
-        return hexArg.toString('hex').replace('0x','');
+        return hexArg.toString('hex').replace('xdc','');
     }
 
 };
@@ -236,9 +236,9 @@ var soliditySha3 = function () {
     var hexArgs = _.map(args, _processSoliditySha3Args);
 
     // console.log(args, hexArgs);
-    // console.log('0x'+ hexArgs.join(''));
+    // console.log('xdc'+ hexArgs.join(''));
 
-    return utils.sha3('0x'+ hexArgs.join(''));
+    return utils.sha3('xdc'+ hexArgs.join(''));
 };
 
 

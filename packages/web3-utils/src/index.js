@@ -158,7 +158,7 @@ var hexToAscii = function(hex) {
 
     var str = "";
     var i = 0, l = hex.length;
-    if (hex.substring(0, 2) === '0x') {
+    if (hex.substring(0, 2) === 'xdc') {
         i = 2;
     }
     for (; i < l; i+=2) {
@@ -178,7 +178,7 @@ var hexToAscii = function(hex) {
  */
 var asciiToHex = function(str) {
     if(!str)
-        return "0x00";
+        return "xdc00";
     var hex = "";
     for(var i = 0; i < str.length; i++) {
         var code = str.charCodeAt(i);
@@ -186,7 +186,7 @@ var asciiToHex = function(str) {
         hex += n.length < 2 ? '0' + n : n;
     }
 
-    return "0x" + hex;
+    return "xdc" + hex;
 };
 
 
@@ -281,20 +281,16 @@ var toWei = function(number, unit) {
  * @return {String}
  */
 var toChecksumAddress = function (address) {
-    if (address.substring(0,3) === "xdc") {
-        address = "0x" + address.substring(3);
-    }
-    
     if (typeof address === 'undefined') return '';
 
-    if(!/^(0x)?[0-9a-f]{40}$/i.test(address))
+    if(!/^(xdc)?[0-9a-f]{40}$/i.test(address))
         throw new Error('Given address "'+ address +'" is not a valid Ethereum address.');
 
 
 
-    address = address.toLowerCase().replace(/^0x/i,'');
-    var addressHash = utils.sha3(address).replace(/^0x/i,'');
-    var checksumAddress = '0x';
+    address = address.toLowerCase().replace(/^xdc/i,'');
+    var addressHash = utils.sha3(address).replace(/^xdc/i,'');
+    var checksumAddress = 'xdc';
 
     for (var i = 0; i < address.length; i++ ) {
         // If ith character is 9 to f then make it uppercase
