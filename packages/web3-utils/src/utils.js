@@ -85,6 +85,10 @@ var toTwosComplement = function (number) {
  * @return {Boolean}
  */
 var isAddress = function (address) {
+    // convert coming xdc prefix to 0x so it can pass all the hex converstion
+    if (address.substring(0,3) === "xdc") {
+        address = "0x" + address.substring(3);
+    }
     // check if it has the basic requirements of an address
     if (!/^(xdc)?[0-9a-f]{40}$/i.test(address)) {
         return false;
