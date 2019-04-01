@@ -1,0 +1,19 @@
+{
+    "name": "xdc3-eth-contract",
+    "namespace": "xinfin",
+    "version": "1.0.0-beta.36",
+    "description": "xdc3 module to interact with Ethereum smart contracts.",
+    "repository": "https://github.com/ethereum/web3.js/tree/master/packages/web3-eth-contract",
+    "license": "LGPL-3.0",
+    "main": "src/index.js",
+    "dependencies": {
+        "underscore": "1.8.3",
+        "xdc3-core": "1.0.0-beta.36",
+        "xdc3-core-helpers": "1.0.0-beta.36",
+        "xdc3-core-method": "1.0.0-beta.36",
+        "xdc3-core-promievent": "1.0.0-beta.36",
+        "xdc3-core-subscriptions": "1.0.0-beta.36",
+        "xdc3-eth-abi": "1.0.0-beta.36",
+        "xdc3-utils": "1.0.0-beta.36"
+    }
+}
