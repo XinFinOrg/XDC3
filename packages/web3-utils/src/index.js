@@ -283,6 +283,11 @@ var toWei = function(number, unit) {
 var toChecksumAddress = function (address) {
     if (typeof address === 'undefined') return '';
 
+    // convert coming xdc prefix to 0x so it can pass all the hex converstion
+    if (address.substring(0,3) === "xdc") {
+        address = "0x" + address.substring(3);
+    }
+
     if(!/^(0x)?[0-9a-f]{40}$/i.test(address))
         throw new Error('Given address "'+ address +'" is not a valid Ethereum address.');
 
@@ -300,6 +305,12 @@ var toChecksumAddress = function (address) {
             checksumAddress += address[i];
         }
     }
+
+    // convert 0x prefix to xdc before returning it so in project you get valid address but with xdc prefix
+    if (checksumAddress.substring(0,2) === "0x") {
+        checksumAddress = "xdc" + checksumAddress.substring(2);
+    }
+    
     return checksumAddress;
 };
 
