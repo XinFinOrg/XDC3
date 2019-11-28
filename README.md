@@ -1,13 +1,9 @@
 
-<img src="https://github.com/ethereum/web3.js/raw/1.x/web3js.jpg" width=200 />
+<img src="https://github.com/XinFinOrg/XDC3/blob/release/1.2.1/xdc3.gif" width=200 />
 
-# web3.js - Ethereum JavaScript API
+# XDC3 - XinFin JavaScript API
 
-[![Join the chat at https://gitter.im/ethereum/web3.js](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ethereum/web3.js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-[![npm](https://img.shields.io/npm/dm/web3.svg)](https://www.npmjs.com/package/web3) [![Build Status][travis-image]][travis-url] [![dependency status][dep-image]][dep-url] [![dev dependency status][dep-dev-image]][dep-dev-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Stories in Ready][waffle-image]][waffle-url]
-
-This is the Ethereum [JavaScript API][docs]
+This is the XinFin [JavaScript API][docs]
 which connects to the [Generic JSON RPC](https://github.com/ethereum/wiki/wiki/JSON-RPC) spec.
 
 
@@ -146,30 +142,5 @@ npm test
 - Please follow the code style of the other files, we use 4 spaces as tabs.
 
 ### Community
- - [Gitter](https://gitter.im/ethereum/web3.js?source=orgpage)
- - [Forum](https://forum.ethereum.org/categories/ethereum-js)
-
-
-### Similar libraries in other languages
- - Python [Web3.py](https://github.com/pipermerriam/web3.py)
- - Haskell [hs-web3](https://github.com/airalab/hs-web3)		   
- - Java [web3j](https://github.com/web3j/web3j)		   
- - Scala [web3j-scala](https://github.com/mslinn/web3j-scala)
- - Purescript [purescript-web3](https://github.com/f-o-a-m/purescript-web3)
- - PHP [web3.php](https://github.com/sc0Vu/web3.php)
-
-
-[repo]: https://github.com/ethereum/web3.js
-[docs]: http://web3js.readthedocs.io/
-[npm-image]: https://badge.fury.io/js/web3.png
-[npm-url]: https://npmjs.org/package/web3
-[travis-image]: https://travis-ci.org/ethereum/web3.js.svg
-[travis-url]: https://travis-ci.org/ethereum/web3.js
-[dep-image]: https://david-dm.org/ethereum/web3.js.svg
-[dep-url]: https://david-dm.org/ethereum/web3.js
-[dep-dev-image]: https://david-dm.org/ethereum/web3.js/dev-status.svg
-[dep-dev-url]: https://david-dm.org/ethereum/web3.js#info=devDependencies
-[coveralls-image]: https://coveralls.io/repos/ethereum/web3.js/badge.svg?branch=master
-[coveralls-url]: https://coveralls.io/r/ethereum/web3.js?branch=1.x
-[waffle-image]: https://badge.waffle.io/ethereum/web3.js.svg?label=ready&title=Ready
-[waffle-url]: https://waffle.io/ethereum/web3.js
+ - [Telegram](https://t.me/xinfintalk)
+ - [Twitter](https://twitter.com/XinFin_Official)
