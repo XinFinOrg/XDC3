@@ -281,19 +281,17 @@ var toWei = function(number, unit) {
  * @return {String}
  */
 var toChecksumAddress = function (address) {
-    if (address.substring(0,3) === "xdc") {
-        address = "0x" + address.substring(3);
-    }
+    // if (address.substring(0,3) === "xdc") {
+    //     address = "0x" + address.substring(3);
+    // }
     if (typeof address === 'undefined') return '';
 
-    if(!/^(0x)?[0-9a-f]{40}$/i.test(address))
+    if(!/^(xdc)?[0-9a-f]{40}$/i.test(address))
         throw new Error('Given address "'+ address +'" is not a valid Ethereum address.');
 
-
-
-    address = address.toLowerCase().replace(/^0x/i,'');
-    var addressHash = utils.sha3(address).replace(/^0x/i,'');
-    var checksumAddress = '0x';
+    address = address.toLowerCase().replace(/^xdc/i,'');
+    var addressHash = utils.sha3(address).replace(/^xdc/i,'');
+    var checksumAddress = 'xdc';
 
     for (var i = 0; i < address.length; i++ ) {
         // If ith character is 9 to f then make it uppercase
@@ -302,6 +300,9 @@ var toChecksumAddress = function (address) {
         } else {
             checksumAddress += address[i];
         }
+    }
+    if (checksumAddress.substring(0,2) === "0x") {
+        checksumAddress = "xdc" + checksumAddress.substring(2);
     }
     return checksumAddress;
 };
