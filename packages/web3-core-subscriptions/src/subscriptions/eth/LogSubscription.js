@@ -21,7 +21,9 @@
  */
 
 import AbstractSubscription from '../../../lib/subscriptions/AbstractSubscription';
+import isFunction from 'lodash/isFunction';
 
+// TODO: Move the past logs logic to the eth module
 export default class LogSubscription extends AbstractSubscription {
     /**
      * @param {Object} options
@@ -51,12 +53,15 @@ export default class LogSubscription extends AbstractSubscription {
         if ((this.options.fromBlock && this.options.fromBlock !== 'latest') || this.options.fromBlock === 0) {
             this.getPastLogsMethod.parameters = [this.formatters.inputLogFormatter(this.options)];
             this.getPastLogsMethod
-                .execute(this.moduleInstance)
+                .execute()
                 .then((logs) => {
                     logs.forEach((log) => {
                         const formattedLog = this.onNewSubscriptionItem(log);
 
-                        callback(false, formattedLog);
+                        if (isFunction(callback)) {
+                            callback(false, formattedLog);
+                        }
+
                         this.emit('data', formattedLog);
                     });
 
@@ -64,8 +69,11 @@ export default class LogSubscription extends AbstractSubscription {
                     super.subscribe(callback);
                 })
                 .catch((error) => {
+                    if (isFunction(callback)) {
+                        callback(error, null);
+                    }
+
                     this.emit('error', error);
-                    callback(error, null);
                 });
 
             return this;

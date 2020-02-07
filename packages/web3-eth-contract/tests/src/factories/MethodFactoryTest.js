@@ -1,5 +1,4 @@
-import {MethodModuleFactory, EstimateGasMethod} from 'web3-core-method';
-import {Accounts} from 'web3-eth-accounts';
+import {EstimateGasMethod} from 'web3-core-method';
 import * as Utils from 'web3-utils';
 import {formatters} from 'web3-core-helpers';
 import {AbiCoder} from 'web3-eth-abi';
@@ -16,8 +15,6 @@ import AllPastEventLogsMethod from '../../../src/methods/AllPastEventLogsMethod'
 jest.mock('Accounts');
 jest.mock('Utils');
 jest.mock('formatters');
-jest.mock('MethodModuleFactory');
-jest.mock('EstimateGasMethod');
 jest.mock('AbiCoder');
 jest.mock('../../../src/factories/ContractModuleFactory');
 jest.mock('../../../src/methods/CallContractMethod');
@@ -30,43 +27,24 @@ jest.mock('../../../src/methods/AllPastEventLogsMethod');
  * MethodFactory test
  */
 describe('MethodFactoryTest', () => {
-    let methodFactory, accountsMock, contractModuleFactoryMock, methodModuleFactoryMock, abiCoderMock;
+    let methodFactory, contractModuleFactoryMock, abiCoderMock;
 
     beforeEach(() => {
-        new Accounts();
-        accountsMock = Accounts.mock.instances[0];
-
-        new MethodModuleFactory(accountsMock);
-        methodModuleFactoryMock = MethodModuleFactory.mock.instances[0];
-        methodModuleFactoryMock.createTransactionSigner = jest.fn();
-        methodModuleFactoryMock.createTransactionConfirmationWorkflow = jest.fn();
-
-        new ContractModuleFactory({}, {}, {}, {}, {});
+        new ContractModuleFactory({}, {}, {});
         contractModuleFactoryMock = ContractModuleFactory.mock.instances[0];
 
         new AbiCoder();
         abiCoderMock = AbiCoder.mock.instances[0];
 
-        methodFactory = new MethodFactory(
-            accountsMock,
-            Utils,
-            formatters,
-            contractModuleFactoryMock,
-            methodModuleFactoryMock,
-            abiCoderMock
-        );
+        methodFactory = new MethodFactory(Utils, formatters, contractModuleFactoryMock, abiCoderMock);
     });
 
     it('constructor check', () => {
-        expect(methodFactory.accounts).toEqual(accountsMock);
-
         expect(methodFactory.utils).toEqual(Utils);
 
         expect(methodFactory.formatters).toEqual(formatters);
 
         expect(methodFactory.contractModuleFactory).toEqual(contractModuleFactoryMock);
-
-        expect(methodFactory.methodModuleFactory).toEqual(methodModuleFactoryMock);
     });
 
     it('calls createMethodByRequestType with requestType call', () => {
@@ -74,7 +52,15 @@ describe('MethodFactoryTest', () => {
     });
 
     it('calls createMethodByRequestType with requestType send', () => {
-        expect(methodFactory.createMethodByRequestType({}, {}, 'send')).toBeInstanceOf(SendContractMethod);
+        const contract = {currentProvider: {constructor: {name: 'HttpProvider'}}};
+
+        expect(methodFactory.createMethodByRequestType({}, contract, 'send')).toBeInstanceOf(SendContractMethod);
+    });
+
+    it('calls createMethodByRequestType with requestType send and a socketProvider', () => {
+        const contract = {currentProvider: {constructor: {name: 'WebsocketProvider'}}};
+
+        expect(methodFactory.createMethodByRequestType({}, contract, 'send')).toBeInstanceOf(SendContractMethod);
     });
 
     it('calls createMethodByRequestType with requestType estimate', () => {
@@ -82,7 +68,9 @@ describe('MethodFactoryTest', () => {
     });
 
     it('calls createMethodByRequestType with requestType contract-deployment', () => {
-        expect(methodFactory.createMethodByRequestType({}, {}, 'contract-deployment')).toBeInstanceOf(
+        const contract = {currentProvider: {constructor: {name: 'WebsocketProvider'}}};
+
+        expect(methodFactory.createMethodByRequestType({}, contract, 'contract-deployment')).toBeInstanceOf(
             ContractDeployMethod
         );
     });
@@ -110,21 +98,17 @@ describe('MethodFactoryTest', () => {
     });
 
     it('calls createSendContractMethod and returns SendContractMethod object', () => {
-        expect(methodFactory.createSendContractMethod({})).toBeInstanceOf(SendContractMethod);
+        const contract = {currentProvider: {constructor: {name: 'HttpProvider'}}};
+
+        expect(methodFactory.createSendContractMethod(contract)).toBeInstanceOf(SendContractMethod);
 
         expect(contractModuleFactoryMock.createAllEventsLogDecoder).toHaveBeenCalled();
-
-        expect(methodModuleFactoryMock.createTransactionSigner).toHaveBeenCalled();
-
-        expect(methodModuleFactoryMock.createTransactionConfirmationWorkflow).toHaveBeenCalled();
     });
 
     it('calls createContractDeployMethod and returns ContractDeployMethod object', () => {
-        expect(methodFactory.createContractDeployMethod({})).toBeInstanceOf(ContractDeployMethod);
+        const contract = {currentProvider: {constructor: {name: 'HttpProvider'}}};
 
-        expect(methodModuleFactoryMock.createTransactionSigner).toHaveBeenCalled();
-
-        expect(methodModuleFactoryMock.createTransactionConfirmationWorkflow).toHaveBeenCalled();
+        expect(methodFactory.createContractDeployMethod(contract)).toBeInstanceOf(ContractDeployMethod);
     });
 
     it('calls createEstimateGasMethod and returns EstimateGasMethod object', () => {
