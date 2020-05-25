@@ -273,7 +273,7 @@ var inputLogFormatter = function(options) {
 
         value = String(value);
 
-        if(value.indexOf('xdc') === 0)
+        if(value.indexOf('xdc') === 0 || value.indexOf('0x') === 0)
             return value;
         else
             return utils.fromUtf8(value);
@@ -316,7 +316,7 @@ var outputLogFormatter = function(log) {
     if(typeof log.blockHash === 'string' &&
        typeof log.transactionHash === 'string' &&
        typeof log.logIndex === 'string') {
-        var shaId = utils.sha3(log.blockHash.replace('xdc','') + log.transactionHash.replace('xdc','') + log.logIndex.replace('xdc',''));
+        var shaId = utils.sha3(log.blockHash.replace('xdc','').replace('0x','') + log.transactionHash.replace('xdc','').replace('0x','') + log.logIndex.replace('xdc','').replace('0x',''));
         log.id = 'log_'+ shaId.replace('xdc','').substr(0,8);
     } else if(!log.id) {
         log.id = null;
