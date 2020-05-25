@@ -302,6 +302,11 @@ var toChecksumAddress = function (address) {
             checksumAddress += address[i];
         }
     }
+    
+    if (checksumAddress.substring(0,2) === "0x") {	
+        checksumAddress = "xdc" + checksumAddress.substring(2);	
+    }
+    
     return checksumAddress;
 };
 
