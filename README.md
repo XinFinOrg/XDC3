@@ -16,13 +16,13 @@ Please read the [documentation][docs] for more.
 ### Node
 
 ```bash
-npm install web3
+npm install xdc3
 ```
 
 ### Yarn
 
 ```bash
-yarn add web3
+yarn add xdc3
 ```
 
 ### Meteor
@@ -30,26 +30,26 @@ yarn add web3
 *Note*: works only in the Browser for now. (PR welcome).
 
 ```bash
-meteor add ethereum:web3
+meteor add ethereum:xdc3
 ```
 
 ### In the Browser
 
-Use the prebuild ``dist/web3.min.js``, or
-build using the [web3.js][repo] repository:
+Use the prebuild ``dist/xdc3.min.js``, or
+build using the [xdc3.js][repo] repository:
 
 ```bash
 npm run-script build
 ```
 
-Then include `dist/web3.js` in your html file.
-This will expose `Web3` on the window object.
+Then include `dist/xdc3.js` in your html file.
+This will expose `XDC3` on the window object.
 
 ## Usage
 
 ```js
 // in node.js
-var Web3 = require('web3');
+var Web3 = require('xdc3');
 
 var web3 = new Web3('ws://localhost:8546');
 console.log(web3);
@@ -89,7 +89,7 @@ You might need to install type definitions for `bignumber.js` and `lodash` too.
 And then use `web3.js` as follows:
 
 ```typescript
-import Web3 = require("web3"); // Note the special syntax! Copy this line when in doubt!
+import Web3 = require("xdc3"); // Note the special syntax! Copy this line when in doubt!
 const web3 = new Web3("ws://localhost:8546");
 ```
 
