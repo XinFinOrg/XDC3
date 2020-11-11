@@ -3,8 +3,8 @@ test
 dist
 docs
 coverage
+scripts
 .gitignore
 .editorconfig
-.travis.yml
 .npmignore
 .DS_Store

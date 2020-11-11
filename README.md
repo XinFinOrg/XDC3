@@ -1,13 +1,12 @@
-
 <img src="https://github.com/XinFinOrg/XDC3/blob/release/1.2.1/xdc3.gif" width=200 />
-
 # XDC3 - XinFin JavaScript API
 
+[![Gitter][gitter-image]][gitter-url] [![StackExchange][stackexchange-image]][stackexchange-url] [![NPM Package Version][npm-image-version]][npm-url] [![NPM Package Downloads][npm-image-downloads]][npm-url] [![Build Status][actions-image]][actions-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Lerna][lerna-image]][lerna-url] [![Netlify Status][netlify-image]][netlify-url]
+
 This is the XinFin [JavaScript API][docs]
-which connects to the [Generic JSON RPC](https://github.com/ethereum/wiki/wiki/JSON-RPC) spec.
+which connects to the [Generic JSON-RPC](https://github.com/ethereum/wiki/wiki/JSON-RPC) spec.
 
-
-You need to run a local or remote Ethereum node to use this library.
+You need to run a local or remote [Ethereum](https://www.ethereum.org/) node to use this library.
 
 Please read the [documentation][docs] for more.
 
@@ -25,33 +24,37 @@ npm install xdc3
 yarn add xdc3
 ```
 
-### Meteor
-
-*Note*: works only in the Browser for now. (PR welcome).
-
-```bash
-meteor add ethereum:xdc3
-```
-
 ### In the Browser
 
-Use the prebuild ``dist/xdc3.min.js``, or
-build using the [xdc3.js][repo] repository:
+Use the prebuilt `dist/web3.min.js`, or
+build using the [web3.js][repo] repository:
 
 ```bash
-npm run-script build
+npm run build
 ```
 
-Then include `dist/xdc3.js` in your html file.
-This will expose `XDC3` on the window object.
+Then include `dist/web3.min.js` in your html file.
+This will expose `Web3` on the window object.
+
+Or via jsDelivr CDN:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+```
+
+UNPKG:
+
+```html
+<script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+```
 
 ## Usage
 
 ```js
-// in node.js
-var Web3 = require('xdc3');
+// In Node.js
+const Web3 = require('xdc3');
 
-var web3 = new Web3('ws://localhost:8546');
+let web3 = new Web3('ws://localhost:8546');
 console.log(web3);
 > {
     eth: ... ,
@@ -61,7 +64,7 @@ console.log(web3);
 }
 ```
 
-Additionally you can set a provider using `web3.setProvider()` (e.g. WebsocketProvider)
+Additionally you can set a provider using `web3.setProvider()` (e.g. WebsocketProvider):
 
 ```js
 web3.setProvider('ws://localhost:8546');
@@ -72,40 +75,39 @@ web3.setProvider(new Web3.providers.WebsocketProvider('ws://localhost:8546'));
 There you go, now you can use it:
 
 ```js
-web3.eth.getAccounts()
-.then(console.log);
+web3.eth.getAccounts().then(console.log);
 ```
 
 ### Usage with TypeScript
 
-Type definitions are maintained at [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped) by others. You can install them with
+We support types within the repo itself. Please open an issue here if you find any wrong types.
 
-```bash
-npm install --dev @types/web3.js
-```
-
-You might need to install type definitions for `bignumber.js` and `lodash` too.
-
-And then use `web3.js` as follows:
+You can use `web3.js` as follows:
 
 ```typescript
-import Web3 = require("xdc3"); // Note the special syntax! Copy this line when in doubt!
-const web3 = new Web3("ws://localhost:8546");
+import Web3 from 'xdc3';
+const web3 = new Web3('ws://localhost:8546');
 ```
 
-**Please note:** We do not support TypeScript ourselves. If you have any issue with TypeScript and `web3.js` do not create an issue here. Go over to DefinitelyTyped and do it there.
+If you are using the types in a `commonjs` module, like in a Node app, you just have to enable `esModuleInterop` and `allowSyntheticDefaultImports` in your `tsconfig` for typesystem compatibility:
+
+```js
+"compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    ....
+```
 
 ## Documentation
 
-Documentation can be found at [read the docs][docs]
-
+Documentation can be found at [ReadTheDocs][docs].
 
 ## Building
 
 ### Requirements
 
-* [Node.js](https://nodejs.org)
-* npm
+-   [Node.js](https://nodejs.org)
+-   [npm](https://www.npmjs.com/)
 
 ```bash
 sudo apt-get update
@@ -113,22 +115,13 @@ sudo apt-get install nodejs
 sudo apt-get install npm
 ```
 
-### Building (gulp)
+### Building (webpack)
 
-Build only the web3.js package
-
-```bash
-npm run-script build
-```
-
-Or build all sub packages as well
+Build the web3.js package:
 
 ```bash
-npm run-script build-all
+npm run build
 ```
-
-This will put all the browser build files into the `dist` folder.
-
 
 ### Testing (mocha)
 
@@ -138,8 +131,9 @@ npm test
 
 ### Contributing
 
-- All contributions have to go into develop, or the 1.0 branch
-- Please follow the code style of the other files, we use 4 spaces as tabs.
+Please follow the [Contribution Guidelines](./CONTRIBUTIONS.md) and [Review Guidelines](./REVIEW.md).
+
+This project adheres to the [Release Guidelines](./REVIEW.md).
 
 ### Community
  - [Telegram](https://t.me/xinfintalk)
