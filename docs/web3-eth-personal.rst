@@ -7,7 +7,7 @@ web3.eth.personal
 
 The ``web3-eth-personal`` package allows you to interact with the Ethereum node's accounts.
 
-.. note:: Many of these functions send sensitive information, like password. Never call these functions over a unsecured Websocket or HTTP provider, as your password will be sent in plain text!
+.. note:: Many of these functions send sensitive information like passwords. Never call these functions over a unsecured Websocket or HTTP provider, as your password will be sent in plain text!
 
 
 .. code-block:: javascript
@@ -46,7 +46,7 @@ newAccount
 
 Creates a new account.
 
-.. note:: Never call this function over a unsecured Websocket or HTTP provider, as your password will be send in plain text!
+.. note:: Never call this function over a unsecured Websocket or HTTP provider, as your password will be sent in plain text!
 
 ----------
 Parameters
@@ -80,7 +80,17 @@ sign
 
     web3.eth.personal.sign(dataToSign, address, password [, callback])
 
-Signs data using a specific account.
+The sign method calculates an Ethereum specific signature with:
+
+.. code-block:: javascript
+
+    sign(keccak256("\x19Ethereum Signed Message:\n" + dataToSign.length + dataToSign)))
+
+Adding a prefix to the message makes the calculated signature recognisable as an Ethereum specific signature.
+
+If you have the original message and the signed message, you can discover the signing account address
+using :ref:`web3.eth.personal.ecRecover <eth-personal-ecRecover>`. See example below.
+
 
 .. note:: Sending your account password over an unsecured HTTP RPC connection is highly unsecure.
 
@@ -118,6 +128,11 @@ Example
     web3.eth.personal.sign(web3.utils.utf8ToHex("Hello world"), "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe", "test password!")
     .then(console.log);
     > "0x30755ed65396facf86c53e6217c52b4daebe72aa4941d89635409de4c9c7f9466d4e9aaec7977f05e923889b33c0d0dd27d7226b6e6f56ce737465c5cfd04be400"
+
+    // recover the signing account address using original message and signed message
+    web3.eth.personal.ecRecover("Hello world", "0x30755ed65396...etc...")
+    .then(console.log);
+    > "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe"
 
 
 ------------------------------------------------------------------------------
@@ -224,6 +239,54 @@ Example
 
 ------------------------------------------------------------------------------
 
+sendTransaction
+=====================
+
+.. code-block:: javascript
+
+    web3.eth.personal.sendTransaction(transactionOptions, password [, callback])
+
+This method sends a transaction over the management API.
+
+.. note:: Sending your account password over an unsecured HTTP RPC connection is highly unsecure.
+
+----------
+Parameters
+----------
+
+
+1. ``Object`` - The transaction options
+2. ``String`` - The passphrase for the current account
+3. ``Function`` - (optional) Optional callback, returns an error object as first parameter and the result as second.
+
+
+-------
+Returns
+-------
+
+
+``Promise<string>`` - The transaction hash.
+
+
+-------
+Example
+-------
+
+
+.. code-block:: javascript
+
+    web3.eth.sendTransaction({
+        from: "0xEB014f8c8B418Db6b45774c326A0E64C78914dC0",
+        gasPrice: "20000000000",
+        gas: "21000",
+        to: '0x3535353535353535353535353535353535353535',
+        value: "1000000000000000000",
+        data: ""
+    }, 'MyPassword!').then(console.log);
+    > '0xda3be87732110de6c1354c83770aae630ede9ac308d9f7b399ecfba23d923384'
+
+------------------------------------------------------------------------------
+
 
 unlockAccount
 =====================
@@ -256,6 +319,123 @@ Example
     .then(console.log('Account unlocked!'));
     > "Account unlocked!"
 
-// TODO
+------------------------------------------------------------------------------
 
-getAccounts, lockAccount, sendTransaction
+lockAccount
+=====================
+
+.. code-block:: javascript
+
+    web3.eth.personal.lockAccount(address [, callback])
+
+Locks the given account.
+
+.. note:: Sending your account password over an unsecured HTTP RPC connection is highly unsecure.
+
+----------
+Parameters
+----------
+
+
+1. ``address`` - ``String``: The account address.
+4. ``Function`` - (optional) Optional callback, returns an error object as first parameter and the result as second.
+
+
+-------
+Returns
+-------
+
+
+``Promise<boolean>``
+
+
+-------
+Example
+-------
+
+
+.. code-block:: javascript
+
+    web3.eth.personal.lockAccount("0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe")
+    .then(console.log('Account locked!'));
+    > "Account locked!"
+
+------------------------------------------------------------------------------
+
+.. _personal-getaccounts:
+
+getAccounts
+=====================
+
+.. code-block:: javascript
+
+    web3.eth.personal.getAccounts([callback])
+
+Returns a list of accounts the node controls by using the provider and calling
+the RPC method ``personal_listAccounts``. Using :ref:`web3.eth.accounts.create() <accounts-create>`
+will not add accounts into this list. For that use
+:ref:`web3.eth.personal.newAccount() <personal-newaccount>`.
+
+The results are the same as :ref:`web3.eth.getAccounts() <eth-getaccounts>` except that calls the RPC method ``eth_accounts``.
+
+-------
+Returns
+-------
+
+
+``Promise<Array>`` - An array of addresses controlled by node.
+
+-------
+Example
+-------
+
+
+.. code-block:: javascript
+
+    web3.eth.personal.getAccounts()
+    .then(console.log);
+    > ["0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe", "0xDCc6960376d6C6dEa93647383FfB245CfCed97Cf"]
+
+------------------------------------------------------------------------------
+
+importRawKey
+=====================
+
+.. code-block:: javascript
+
+    web3.eth.personal.importRawKey(privateKey, password)
+
+Imports the given private key into the key store, encrypting it with the passphrase.
+
+Returns the address of the new account.
+
+.. note:: Sending your account password over an unsecured HTTP RPC connection is highly unsecure.
+
+----------
+Parameters
+----------
+
+
+1. ``privateKey`` - ``String`` - An unencrypted private key (hex string).
+2. ``password`` - ``String`` - The password of the account.
+
+
+-------
+Returns
+-------
+
+
+``Promise<string>`` - The address of the account.
+
+-------
+Example
+-------
+
+
+.. code-block:: javascript
+
+    web3.eth.personal.importRawKey("cd3376bb711cb332ee3fb2ca04c6a8b9f70c316fcdf7a1f44ef4c7999483295e", "password1234")
+    .then(console.log);
+    > "0x8f337bf484b2fc75e4b0436645dcc226ee2ac531"
+
+
