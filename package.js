@@ -1,7 +1,7 @@
 /* jshint ignore:start */
 Package.describe({
     name: 'xinfin:xdc3',
-    version: '1.2.132',
+    version: '1.2.134',
     summary: 'XinFin JavaScript API, middleware to talk to a ethreum node over RPC',
     git: 'https://github.com/XinFinOrg/XDC3.js',
     // By default, Meteor will default to using README.md for documentation.
