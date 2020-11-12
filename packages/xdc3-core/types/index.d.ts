@@ -261,7 +261,7 @@ export class NetworkBase {
     ): Promise<number>;
 }
 
-// had to move accounts from web3-eth-accounts due to other modules in 1.x not referencing
+// had to move accounts from xdc3-eth-accounts due to other modules in 1.x not referencing
 
 export class AccountsBase {
     constructor();

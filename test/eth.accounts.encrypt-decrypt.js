@@ -118,7 +118,7 @@ describe("eth", function () {
         runTests();
     });
 
-    // Verify that `Buffer` in web3-eth-accounts is backwards
+    // Verify that `Buffer` in xdc3-eth-accounts is backwards
     // compatible with a deprecated node Buffer substitute injected into
     // builds by webpack (and React).
     describe("with feross/buffer@4.9.1", function(){

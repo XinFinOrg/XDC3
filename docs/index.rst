@@ -25,14 +25,14 @@ Contents:
     :caption: API Reference
 
     web3
-    web3-eth
-    web3-eth-subscribe
-    web3-eth-contract
-    web3-eth-accounts
-    web3-eth-personal
-    web3-eth-ens
-    web3-eth-iban
-    web3-eth-abi
+    xdc3-eth
+    xdc3-eth-subscribe
+    xdc3-eth-contract
+    xdc3-eth-accounts
+    xdc3-eth-personal
+    xdc3-eth-ens
+    xdc3-eth-iban
+    xdc3-eth-abi
     web3-net
     web3-bzz
     web3-shh

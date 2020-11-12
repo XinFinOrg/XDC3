@@ -19,7 +19,7 @@
 
 import { PromiEvent, TransactionConfig, TransactionReceipt } from 'xdc3-core';
 import { TransactionRevertInstructionError } from 'xdc3-core-helpers';
-import { Eth } from 'xdc3-eth';
+import { Eth } from '../../xdc3-eth';
 import { Contract } from '../../xdc3-eth-contract/types';
 
 export interface ContentHash {

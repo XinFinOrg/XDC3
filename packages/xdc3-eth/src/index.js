@@ -298,7 +298,7 @@ var Eth = function Eth() {
     // create a proxy Contract type for this instance, as a Contract's provider
     // is stored as a class member rather than an instance variable. If we do
     // not create this proxy type, changing the provider in one instance of
-    // web3-eth would subsequently change the provider for _all_ contract
+    // xdc3-eth would subsequently change the provider for _all_ contract
     // instances!
     var self = this;
     var Contract = function Contract() {
@@ -320,7 +320,7 @@ var Eth = function Eth() {
         BaseContract.setProvider.apply(this, arguments);
     };
 
-    // make our proxy Contract inherit from web3-eth-contract so that it has all
+    // make our proxy Contract inherit from xdc3-eth-contract so that it has all
     // the right functionality and so that instanceof and friends work properly
     Contract.prototype = Object.create(BaseContract.prototype);
     Contract.prototype.constructor = Contract;
@@ -578,7 +578,7 @@ var Eth = function Eth() {
                     params: 1,
                     inputFormatter: [formatter.inputLogFormatter],
                     outputFormatter: formatter.outputLogFormatter,
-                    // DUBLICATE, also in web3-eth-contract
+                    // DUBLICATE, also in xdc3-eth-contract
                     subscriptionHandler: function (output) {
                         if(output.removed) {
                             this.emit('changed', output);

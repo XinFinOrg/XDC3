@@ -5,7 +5,7 @@ web3.eth.personal
 ========
 
 
-The ``web3-eth-personal`` package allows you to interact with the Ethereum node's accounts.
+The ``xdc3-eth-personal`` package allows you to interact with the Ethereum node's accounts.
 
 .. note:: Many of these functions send sensitive information like passwords. Never call these functions over a unsecured Websocket or HTTP provider, as your password will be sent in plain text!
 

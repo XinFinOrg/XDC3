@@ -881,7 +881,7 @@ clearSubscriptions
 
 Resets subscriptions.
 
-.. note:: This will not reset subscriptions from other packages like ``web3-eth``, as they use their own requestManager.
+.. note:: This will not reset subscriptions from other packages like ``xdc3-eth``, as they use their own requestManager.
 
 ----------
 Parameters
