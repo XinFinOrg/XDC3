@@ -7,7 +7,7 @@ web3.bzz
 .. note:: This API might change over time.
 
 
-The ``web3-bzz`` package allows you to interact with swarm, the decentralized file store.
+The ``xdc3-bzz`` package allows you to interact with swarm, the decentralized file store.
 For more see the `Swarm Docs <http://swarm-guide.readthedocs.io/en/latest/>`_.
 
 

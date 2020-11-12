@@ -33,11 +33,11 @@ Contents:
     xdc3-eth-ens
     xdc3-eth-iban
     xdc3-eth-abi
-    web3-net
-    web3-bzz
-    web3-shh
-    web3-utils
-    web3-admin
+    xdc3-net
+    xdc3-bzz
+    xdc3-shh
+    xdc3-utils
+    xdc3-admin
 
 
 Special thanks to `Netlify <https://www.netlify.com/>`_ for providing build and deploy services for our end-to-end integration tests.

@@ -6,9 +6,9 @@ Getting Started
 The xdc3 library is a collection of modules that contain functionality for the ethereum ecosystem.
 
 - ``xdc3-eth`` is for the ethereum blockchain and smart contracts.
-- ``web3-shh`` is for the whisper protocol, to communicate p2p and broadcast.
-- ``web3-bzz`` is for the swarm protocol, the decentralized file storage.
-- ``web3-utils`` contains useful helper functions for Dapp developers.
+- ``xdc3-shh`` is for the whisper protocol, to communicate p2p and broadcast.
+- ``xdc3-bzz`` is for the swarm protocol, the decentralized file storage.
+- ``xdc3-utils`` contains useful helper functions for Dapp developers.
 
 
 .. _adding-web3:
