@@ -26,8 +26,8 @@
 var _ = require('underscore');
 var errors = require('web3-core-helpers').errors;
 var formatters = require('web3-core-helpers').formatters;
-var utils = require('web3-utils');
-var promiEvent = require('web3-core-promievent');
+var utils = require('../../xdc3-utils/types');
+var promiEvent = require('../../xdc3-eth-contract/src/node_modules/web3-core-promievent');
 var Subscriptions = require('web3-core-subscriptions').subscriptions;
 
 var EthersTransactionUtils = require('@ethersproject/transactions');

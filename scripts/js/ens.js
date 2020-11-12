@@ -2,7 +2,7 @@ const ENSArtifact = require("@ensdomains/ens/build/contracts/ENSRegistry");
 const FIFSRegistrarArtifact = require("@ensdomains/ens/build/contracts/FIFSRegistrar");
 const ReverseRegistrarArtifact = require("@ensdomains/ens/build/contracts/ReverseRegistrar");
 const PublicResolverArtifact = require("@ensdomains/resolver/build/contracts/PublicResolver");
-const namehash = require('eth-ens-namehash');
+const namehash = require('../../packages/xdc3-eth-ens/src/contracts/node_modules/eth-ens-namehash');
 
 const addressZero = "0x0000000000000000000000000000000000000000";
 const addressOne = "0x0000000000000000000000000000000000000001";

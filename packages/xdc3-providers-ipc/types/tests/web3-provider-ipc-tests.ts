@@ -21,7 +21,7 @@
  */
 
 import * as net from 'net';
-import { IpcProvider } from 'web3-providers';
+import { IpcProvider } from '../../../xdc3-providers-http/types/tests/node_modules/web3-providers';
 import { JsonRpcResponse } from 'web3-core-helpers';
 
 const ipcProvider = new IpcProvider(

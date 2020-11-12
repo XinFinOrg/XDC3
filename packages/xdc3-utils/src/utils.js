@@ -24,7 +24,7 @@ var _ = require('underscore');
 var BN = require('bn.js');
 var numberToBN = require('number-to-bn');
 var utf8 = require('utf8');
-var Hash = require("eth-lib/lib/hash");
+var Hash = require("../../xdc3-eth-accounts/src/node_modules/eth-lib/lib/hash");
 var ethereumBloomFilters = require('ethereum-bloom-filters');
 
 

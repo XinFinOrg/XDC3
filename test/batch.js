@@ -1,6 +1,6 @@
 var chai = require('chai');
 var assert = chai.assert;
-var Web3 = require('../packages/web3');
+var Web3 = require('../packages/xdc3');
 var FakeIpcProvider = require('./helpers/FakeIpcProvider');
 
 

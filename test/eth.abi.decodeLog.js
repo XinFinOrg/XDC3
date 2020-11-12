@@ -1,6 +1,6 @@
 var chai = require('chai');
 var assert = chai.assert;
-var Web3Abi = require('../packages/web3-eth-abi');
+var Web3Abi = require('../packages/xdc3-eth-abi');
 
 var tests = [{
     params: [[{
