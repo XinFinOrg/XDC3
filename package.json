@@ -18,7 +18,6 @@
     ],
     "scripts": {
         "version": "npm run build",
-        "preinstall": "npm i lerna -g",
         "postinstall": "npm run bootstrap",
         "build": "npm run bootstrap && lerna run tsc && webpack && cp -r ./dist ./packages/web3",
         "publish": "lerna publish",
