@@ -1,13 +1,12 @@
 {
-    "name": "@xinfinorg/xdc3",
+    "name": "xdc3",
     "private": false,
-    "version": "1.2.130",
+    "version": "1.2.137",
     "description": "XinFin JavaScript API wrapper repository",
     "license": "LGPL-3.0",
     "engines": {
         "node": ">=8.0.0"
     },
-    "publishConfig": { "registry": "https://npm.pkg.github.com/xdc3" },
     "main": "./packages/web3/src/index.js",
     "bundlesize": [
         {
