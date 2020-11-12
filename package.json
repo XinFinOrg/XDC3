@@ -1,7 +1,7 @@
 {
     "name": "xdc3",
     "private": false,
-    "version": "1.2.134",
+    "version": "1.2.135",
     "description": "XinFin JavaScript API wrapper repository",
     "license": "LGPL-3.0",
     "engines": {
