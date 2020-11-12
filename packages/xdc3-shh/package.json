@@ -1,6 +1,6 @@
 {
     "name": "xdc3-shh",
-    "version": "1.3.1-alpha.1",
+    "version": "1.3.2-alpha.0",
     "description": "Web3 module to interact with the Whisper messaging protocol.",
     "repository": "https://github.com/ethereum/web3.js/tree/1.x/packages/web3-shh",
     "license": "LGPL-3.0",
