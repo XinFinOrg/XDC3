@@ -1,5 +1,5 @@
 {
-    "name": "web3-eth-abi",
+    "name": "xdc3-eth-abi",
     "version": "1.3.1-alpha.0",
     "description": "Web3 module encode and decode EVM in/output.",
     "repository": "https://github.com/ethereum/web3.js/tree/1.x/packages/web3-eth-abi",
@@ -21,5 +21,6 @@
     "devDependencies": {
         "dtslint": "^3.4.1",
         "typescript": "^3.9.5"
-    }
+    },
+    "gitHead": "69809776c7f5e48aff41df82981c54ca44b51fad"
 }

@@ -1,5 +1,5 @@
 {
-    "name": "web3-core-method",
+    "name": "xdc3-core-method",
     "version": "1.3.1-alpha.0",
     "description": "Creates the methods on the web3 modules. This is an internal package.",
     "repository": "https://github.com/ethereum/web3.js/tree/1.x/packages/web3-core-method",
@@ -24,5 +24,6 @@
     "devDependencies": {
         "dtslint": "^3.4.1",
         "typescript": "^3.9.5"
-    }
+    },
+    "gitHead": "69809776c7f5e48aff41df82981c54ca44b51fad"
 }

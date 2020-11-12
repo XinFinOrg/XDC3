@@ -1,5 +1,5 @@
 {
-    "name": "web3-core-requestmanager",
+    "name": "xdc3-core-requestmanager",
     "version": "1.3.1-alpha.0",
     "description": "Web3 module to handle requests to external providers.",
     "repository": "https://github.com/ethereum/web3.js/tree/1.x/packages/web3-core-requestmanager",
@@ -17,5 +17,6 @@
         "web3-providers-http": "1.3.1-alpha.0",
         "web3-providers-ipc": "1.3.1-alpha.0",
         "web3-providers-ws": "1.3.1-alpha.0"
-    }
+    },
+    "gitHead": "69809776c7f5e48aff41df82981c54ca44b51fad"
 }
