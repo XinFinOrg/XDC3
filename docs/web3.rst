@@ -3,11 +3,11 @@
 Web3
 ====
 
-This is the main (or 'umbrella') class of the web3.js library.
+This is the main (or 'umbrella') class of the xdc3 library.
 
 .. code-block:: javascript
 
-    var Web3 = require('web3');
+    var Web3 = require('xdc3');
 
     > Web3.utils
     > Web3.version
@@ -62,7 +62,7 @@ The Web3 class is an umbrella package to house all Ethereum related modules.
 
 .. code-block:: javascript
 
-    var Web3 = require('web3');
+    var Web3 = require('xdc3');
 
     // "Web3.providers.givenProvider" will be set if in an Ethereum supported browser.
     var web3 = new Web3(Web3.givenProvider || 'ws://some.local-or-remote.node:8546');
@@ -86,7 +86,7 @@ Static accessible property of the Web3 class and property of the instance as wel
     Web3.version
     web3.version
 
-Contains the current package version of the web3.js library.
+Contains the current package version of the xdc3 library.
 
 -------
 Returns

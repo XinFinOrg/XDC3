@@ -5,7 +5,7 @@ var https = require('https');
 var SandboxedModule = require('sandboxed-module');
 
 SandboxedModule.registerBuiltInSourceTransformer('istanbul');
-var HttpProvider = SandboxedModule.require('../packages/web3-providers-http', {
+var HttpProvider = SandboxedModule.require('../packages/xdc3-providers-http', {
     requires: {
         'xhr2-cookies': require('./helpers/FakeXHR2'),
         // 'xmlhttprequest': require('./helpers/FakeXMLHttpRequest')
@@ -13,7 +13,7 @@ var HttpProvider = SandboxedModule.require('../packages/web3-providers-http', {
     singleOnly: true
 });
 
-describe('web3-providers-http', function () {
+describe('xdc3-providers-http', function () {
     describe('prepareRequest', function () {
         let provider;
         let result;

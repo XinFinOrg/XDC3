@@ -17,7 +17,7 @@ Package.describe({
 Package.onUse(function(api) {
     api.versionsFrom('1.0.3.2');
 
-    api.addFiles('dist/web3.js', ['client']); // 'server'
+    api.addFiles('dist/xdc3.js', ['client']); // 'server'
 });
 
 /* jshint ignore:end */

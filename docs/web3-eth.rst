@@ -9,7 +9,7 @@ The ``web3-eth`` package allows you to interact with an Ethereum blockchain and 
 
 .. code-block:: javascript
 
-    var Eth = require('web3-eth');
+    var Eth = require('xdc3-eth');
 
     // "Eth.providers.givenProvider" will be set if in an Ethereum supported browser.
     var eth = new Eth(Eth.givenProvider || 'ws://some.local-or-remote.node:8546');
@@ -17,7 +17,7 @@ The ``web3-eth`` package allows you to interact with an Ethereum blockchain and 
 
     // or using the web3 umbrella package
 
-    var Web3 = require('web3');
+    var Web3 = require('xdc3');
     var web3 = new Web3(Web3.givenProvider || 'ws://some.local-or-remote.node:8546');
 
     // -> web3.eth
@@ -1916,7 +1916,7 @@ requestAccounts
 
     web3.eth.requestAccounts([callback])
 
-This method will request/enable the accounts from the current environment. This method will only work if you're using the injected provider from a application like Metamask, Status or TrustWallet. It doesn't work if you're connected to a node with a default Web3.js provider (WebsocketProvider, HttpProvidder and IpcProvider).
+This method will request/enable the accounts from the current environment. This method will only work if you're using the injected provider from a application like Metamask, Status or TrustWallet. It doesn't work if you're connected to a node with a default xdc3 provider (WebsocketProvider, HttpProvidder and IpcProvider).
 
 For more information about the behavior of this method please read `EIP-1102: Opt-in account exposure <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1102.md>`_.
 

@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
     mode: "production",
     entry: {
-        web3: "./packages/web3/lib/index.js",
+        xdc3: "./packages/xdc3/lib/index.js",
     },
     plugins: [
         new CleanWebpackPlugin(),
@@ -47,7 +47,7 @@ module.exports = {
     output: {
         filename: "[name].min.js",
         path: path.resolve(__dirname, "dist"),
-        library: "Web3",
+        library: "xdc3",
         libraryTarget: "umd",
     },
 };

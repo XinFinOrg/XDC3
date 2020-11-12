@@ -3,12 +3,12 @@ var assert = chai.assert;
 var FakeIpcProvider = require('./helpers/FakeIpcProvider');
 var FakeHttpProvider = require('./helpers/FakeHttpProvider');
 var Web3 = require('../packages/web3');
-var sha3 = require('../packages/web3-utils').sha3;
-var formatters = require('web3-core-helpers').formatters;
-var abiCoder = require('web3-eth-abi');
-var utils = require('web3-utils');
+var sha3 = require('../packages/xdc3-utils').sha3;
+var formatters = require('xdc3-core-helpers').formatters;
+var abiCoder = require('xdc3-eth-abi');
+var utils = require('xdc3-utils');
 var namehash = require('eth-ens-namehash');
-var asciiToHex = require('../packages/web3-utils').asciiToHex;
+var asciiToHex = require('../packages/xdc3-utils').asciiToHex;
 
 /**
  * Injects the required validations and results for the `eth_sendTransaction` call

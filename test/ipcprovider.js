@@ -6,14 +6,14 @@ var FakeIpcRequest = require('./helpers/FakeIpcRequest')
 var net = new FakeIpcRequest();
 
 SandboxedModule.registerBuiltInSourceTransformer('istanbul');
-var IpcProvider = SandboxedModule.require('../packages/web3-providers-ipc', {
+var IpcProvider = SandboxedModule.require('../packages/xdc3-providers-ipc', {
     requires: {
         'bn.js': require('bn.js'),
     },
     singleOnly: true
 });
 
-describe('web3-providers-ipc', function () {
+describe('xdc3-providers-ipc', function () {
 
     // oboe.js DOESNT WORK with FakeIpcProvider
     // describe('send', function () {

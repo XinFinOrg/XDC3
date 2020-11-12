@@ -1,7 +1,7 @@
 var _ = require('underscore');
 var chai = require('chai');
 var assert = chai.assert;
-var utils = require('../packages/web3-utils');
+var utils = require('../packages/xdc3-utils');
 var coder = require('ethjs-abi');
 
 // TODO check line 108 again!

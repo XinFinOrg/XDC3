@@ -6,7 +6,7 @@ Callbacks Promises Events
 
 To help web3 integrate into all kinds of projects with different standards we provide multiple ways to act on asynchronous functions.
 
-Most web3.js objects allow a callback as the last parameter, as well as returning promises to chain functions.
+Most xdc3 objects allow a callback as the last parameter, as well as returning promises to chain functions.
 
 Ethereum as a blockchain has different levels of finality and therefore needs to return multiple "stages" of an action.
 To cope with requirement we return a "promiEvent" for functions like ``web3.eth.sendTransaction`` or contract methods.

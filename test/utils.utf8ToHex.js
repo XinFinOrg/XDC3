@@ -1,5 +1,5 @@
 var chai = require('chai');
-var utils = require('../packages/web3-utils');
+var utils = require('../packages/xdc3-utils');
 
 var assert = chai.assert;
 

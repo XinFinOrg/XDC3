@@ -12,7 +12,7 @@ node_modules
 .npm/
 .history/
 .vscode/
-packages/web3/dist/
+packages/xdc3/dist/
 lerna-debug.log
 .nyc_output/
 build/

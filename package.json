@@ -7,10 +7,10 @@
     "engines": {
         "node": ">=8.0.0"
     },
-    "main": "./packages/web3/src/index.js",
+    "main": "./packages/xdc3/src/index.js",
     "bundlesize": [
         {
-            "path": "./packages/web3/dist/web3.min.js",
+            "path": "./packages/xdc3/dist/xdc3.min.js",
             "maxSize": "1.5 mB",
             "compression": "none"
         }
@@ -19,7 +19,7 @@
         "version": "npm run build",
         "preinstall": "npm i lerna -g",
         "postinstall": "npm run bootstrap",
-        "build": "npm run bootstrap && lerna run tsc && webpack && cp -r ./dist ./packages/web3",
+        "build": "npm run bootstrap && lerna run tsc && webpack && cp -r ./dist ./packages/xdc3",
         "publish": "lerna publish",
         "bootstrap": "lerna bootstrap --hoist",
         "lint": "jshint *.js packages",

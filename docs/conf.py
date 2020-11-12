@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# web3.js documentation build configuration file, created by
+# xdc3 documentation build configuration file, created by
 # sphinx-quickstart on Fri Oct 14 15:04:49 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -48,7 +48,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'web3.js'
+project = u'xdc3'
 copyright = u'2016, Ethereum'
 author = u'Fabian Vogelsteller, Marek Kotewicz, Jeffrey Wilcke, Marian Oancea, Gav Wood'
 
@@ -133,7 +133,7 @@ html_theme = 'default'
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
-# html_title = u'web3.js v1.0.0'
+# html_title = u'xdc3 v1.0.0'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
@@ -259,7 +259,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'web3js.tex', u'web3.js Documentation',
+    (master_doc, 'web3js.tex', u'xdc3 Documentation',
      u'Fabian Vogelsteller, Marek Kotewicz, Jeffrey Wilcke, Marian Oancea, Gav Wood', 'manual'),
 ]
 
@@ -301,7 +301,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'web3js', u'web3.js Documentation',
+    (master_doc, 'web3js', u'xdc3 Documentation',
      [author], 1)
 ]
 
@@ -316,7 +316,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'web3js', u'web3.js Documentation',
+    (master_doc, 'web3js', u'xdc3 Documentation',
      author, 'web3js', 'One line description of project.',
      'Miscellaneous'),
 ]

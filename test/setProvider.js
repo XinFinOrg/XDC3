@@ -18,13 +18,13 @@ var FakeHttpProvider = require('./helpers/FakeHttpProvider');
 var chai = require('chai');
 var assert = chai.assert;
 var Web3 = require('../packages/web3');
-var Eth = require('../packages/web3-eth');
-var Shh = require('../packages/web3-shh');
-var Personal = require('../packages/web3-eth-personal');
-var Accounts = require('../packages/web3-eth-accounts');
-var Contract = require('../packages/web3-eth-contract');
-var Net = require('../packages/web3-net');
-var Bzz = require('../packages/web3-bzz');
+var Eth = require('../packages/xdc3-eth');
+var Shh = require('../packages/xdc3-shh');
+var Personal = require('../packages/xdc3-eth-personal');
+var Accounts = require('../packages/xdc3-eth-accounts');
+var Contract = require('../packages/xdc3-eth-contract');
+var Net = require('../packages/xdc3-net');
+var Bzz = require('../packages/xdc3-bzz');
 
 
 var tests = [{

@@ -1,4 +1,4 @@
-var Accounts = require("./../packages/web3-eth-accounts");
+var Accounts = require("./../packages/xdc3-eth-accounts");
 var chai = require('chai');
 var assert = chai.assert;
 var Web3 = require('../packages/web3');

@@ -1,11 +1,11 @@
 
 =================================
-web3.js - Ethereum JavaScript API
+xdc3 - Ethereum JavaScript API
 =================================
 
-web3.js is a collection of libraries that allow you to interact with a local or remote ethereum node using HTTP, IPC or WebSocket.
+xdc3 is a collection of libraries that allow you to interact with a local or remote ethereum node using HTTP, IPC or WebSocket.
 
-The following documentation will guide you through :ref:`installing and running web3.js <adding-web3>` as well as providing an :ref:`API reference documentation <#id1>` with examples.
+The following documentation will guide you through :ref:`installing and running xdc3 <adding-web3>` as well as providing an :ref:`API reference documentation <#id1>` with examples.
 
 Contents:
 
