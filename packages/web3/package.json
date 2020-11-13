@@ -50,13 +50,13 @@
         }
     ],
     "dependencies": {
-        "test3js-bzz": "1.3.0",
-        "test3js-core": "1.3.0",
-        "test3js-eth": "1.3.0",
-        "test3js-eth-personal": "1.3.0",
-        "test3js-net": "1.3.0",
-        "test3js-shh": "1.3.0",
-        "test3js-utils": "1.3.0"
+        "test3js-bzz": "1.0.4",
+        "test3js-core": "1.0.4",
+        "test3js-eth": "1.0.4",
+        "test3js-eth-personal": "1.0.4",
+        "test3js-net": "1.0.4",
+        "test3js-shh": "1.0.4",
+        "test3js-utils": "1.0.4"
     },
     "devDependencies": {
         "@types/node": "^12.12.6",

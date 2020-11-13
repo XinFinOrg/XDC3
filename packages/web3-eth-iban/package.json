@@ -15,7 +15,7 @@
     "main": "lib/index.js",
     "dependencies": {
         "bn.js": "^4.11.9",
-        "test3js-utils": "1.3.0"
+        "test3js-utils": "1.0.4"
     },
     "devDependencies": {
         "dtslint": "^3.4.1",
