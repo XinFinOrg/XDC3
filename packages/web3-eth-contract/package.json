@@ -18,7 +18,7 @@
         "test3js-core": "1.0.4",
         "test3js-core-helpers": "1.0.4",
         "test3js-core-method": "1.0.4",
-        "test3js-core-promievent": "1.0.4",
+        "test3js-core-promievent": "1.0.2",
         "test3js-core-subscriptions": "1.0.4",
         "test3js-eth-abi": "1.0.4",
         "test3js-utils": "1.0.4",
