@@ -1,6 +1,6 @@
 {
     "name": "test3js-eth-contract",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "description": "Web3 module to interact with Ethereum smart contracts.",
     "repository": "https://github.com/ethereum/web3.js/tree/1.x/packages/web3-eth-contract",
     "license": "LGPL-3.0",
@@ -15,14 +15,14 @@
     "main": "lib/index.js",
     "dependencies": {
         "@types/bn.js": "^4.11.5",
-        "underscore": "1.9.1",
         "test3js-core": "1.3.0",
         "test3js-core-helpers": "1.3.0",
         "test3js-core-method": "1.3.0",
         "test3js-core-promievent": "1.3.0",
         "test3js-core-subscriptions": "1.3.0",
         "test3js-eth-abi": "1.3.0",
-        "test3js-utils": "1.3.0"
+        "test3js-utils": "1.3.0",
+        "underscore": "1.9.1"
     },
     "devDependencies": {
         "dtslint": "^3.4.1",
