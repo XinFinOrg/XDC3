@@ -17,12 +17,12 @@
         "content-hash": "^2.5.2",
         "eth-ens-namehash": "2.0.8",
         "underscore": "1.9.1",
-        "web3-core": "1.3.0",
-        "web3-core-helpers": "1.3.0",
-        "web3-core-promievent": "1.3.0",
-        "web3-eth-abi": "1.3.0",
-        "web3-eth-contract": "1.3.0",
-        "web3-utils": "1.3.0"
+        "test3js-core": "1.3.0",
+        "test3js-core-helpers": "1.3.0",
+        "test3js-core-promievent": "1.3.0",
+        "test3js-eth-abi": "1.3.0",
+        "test3js-eth-contract": "1.3.0",
+        "test3js-utils": "1.3.0"
     },
     "devDependencies": {
         "dtslint": "^3.4.1",

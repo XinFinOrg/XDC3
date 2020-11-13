@@ -14,7 +14,7 @@
     "types": "types/index.d.ts",
     "main": "lib/index.js",
     "dependencies": {
-        "web3-core-helpers": "1.3.0",
+        "test3js-core-helpers": "1.3.0",
         "xhr2-cookies": "1.1.0"
     },
     "devDependencies": {
