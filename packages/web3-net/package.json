@@ -1,5 +1,5 @@
 {
-    "name": "test3-net",
+    "name": "test3js-net",
     "version": "1.0.1",
     "description": "Web3 module to interact with the Ethereum nodes networking properties.",
     "repository": "https://github.com/ethereum/web3.js/tree/1.x/packages/web3-net",

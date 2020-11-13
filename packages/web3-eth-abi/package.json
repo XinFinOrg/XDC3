@@ -1,5 +1,5 @@
 {
-    "name": "test3-eth-abi",
+    "name": "test3js-eth-abi",
     "version": "1.0.1",
     "description": "Web3 module encode and decode EVM in/output.",
     "repository": "https://github.com/ethereum/web3.js/tree/1.x/packages/web3-eth-abi",

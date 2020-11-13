@@ -1,5 +1,5 @@
 {
-    "name": "test3-eth",
+    "name": "test3js-eth",
     "version": "1.0.1",
     "description": "Web3 module to interact with the Ethereum blockchain and smart contracts.",
     "repository": "https://github.com/ethereum/web3.js/tree/1.x/packages/web3-eth",
