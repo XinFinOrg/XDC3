@@ -25,9 +25,9 @@ npm uninstall --save-dev web3
 npm install --save-dev web3@e2e --registry http://localhost:4873
 
 npm list web3
-npm list web3-utils
-npm list web3-core
-npm list web3-core-promievent
+npm list test3js-utils
+npm list test3js-core
+npm list test3js-core-promievent
 
 cat ./package.json
 

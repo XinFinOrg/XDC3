@@ -36,9 +36,9 @@ echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 yarn --registry http://localhost:4873
 
 yarn list web3
-yarn list web3-utils
-yarn list web3-core
-yarn list web3-core-promievent
+yarn list test3js-utils
+yarn list test3js-core
+yarn list test3js-core-promievent
 
 cat ./package.json
 

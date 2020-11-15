@@ -1,5 +1,5 @@
 var u = require('./helpers/test.utils.js');
-var Shh = require('../packages/web3-shh');
+var Shh = require('../packages/test3js-shh');
 var shh = new Shh();
 
 describe('shh', function() {

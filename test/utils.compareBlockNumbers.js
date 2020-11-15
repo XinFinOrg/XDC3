@@ -1,7 +1,7 @@
 const chai = require('chai');
 const assert = chai.assert;
 const BN = require('bn.js');
-const formatters = require('../packages/web3-utils/src/index.js');
+const formatters = require('../packages/test3js-utils/src/index.js');
 
 const pending = "pending";
 const latest = "latest";

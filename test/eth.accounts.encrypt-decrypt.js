@@ -1,4 +1,4 @@
-var Accounts = require("./../packages/web3-eth-accounts/src/index.js");
+var Accounts = require("./../packages/test3js-eth-accounts/src/index.js");
 var ethers = require('ethers');
 var chai = require('chai');
 var assert = chai.assert;
@@ -118,7 +118,7 @@ describe("eth", function () {
         runTests();
     });
 
-    // Verify that `Buffer` in web3-eth-accounts is backwards
+    // Verify that `Buffer` in test3js-eth-accounts is backwards
     // compatible with a deprecated node Buffer substitute injected into
     // builds by webpack (and React).
     describe("with feross/buffer@4.9.1", function(){

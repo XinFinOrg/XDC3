@@ -1,0 +1,31 @@
+{
+    "name": "test3js-eth-ens",
+    "version": "1.0.5",
+    "description": "ENS support for web3.",
+    "repository": "https://github.com/ethereum/web3.js/tree/1.x/packages/test3js-eth-ens",
+    "license": "LGPL-3.0",
+    "engines": {
+        "node": ">=8.0.0"
+    },
+    "types": "types/index.d.ts",
+    "scripts": {
+        "tsc": "tsc -b tsconfig.json",
+        "dtslint": "dtslint --localTs ../../node_modules/typescript/lib  types"
+    },
+    "main": "lib/index.js",
+    "dependencies": {
+        "content-hash": "^2.5.2",
+        "eth-ens-namehash": "2.0.8",
+        "test3js-core": "1.0.5",
+        "test3js-core-helpers": "1.0.5",
+        "test3js-core-promievent": "1.0.5",
+        "test3js-eth-abi": "1.0.5",
+        "test3js-eth-contract": "1.0.5",
+        "test3js-utils": "1.0.5",
+        "underscore": "1.9.1"
+    },
+    "devDependencies": {
+        "dtslint": "^3.4.1",
+        "typescript": "^3.9.5"
+    }
+}

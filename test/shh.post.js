@@ -1,5 +1,5 @@
 var testMethod = require('./helpers/test.method.js');
-var utils = require('../packages/web3-utils');
+var utils = require('../packages/test3js-utils');
 
 var method = 'post';
 

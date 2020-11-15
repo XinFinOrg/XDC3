@@ -1,0 +1,27 @@
+{
+    "name": "test3js-shh",
+    "version": "1.0.5",
+    "description": "Web3 module to interact with the Whisper messaging protocol.",
+    "repository": "https://github.com/ethereum/web3.js/tree/1.x/packages/test3js-shh",
+    "license": "LGPL-3.0",
+    "engines": {
+        "node": ">=8.0.0"
+    },
+    "types": "types/index.d.ts",
+    "scripts": {
+        "tsc": "tsc -b tsconfig.json",
+        "dtslint": "dtslint --localTs ../../node_modules/typescript/lib  types"
+    },
+    "main": "lib/index.js",
+    "dependencies": {
+        "test3js-core": "1.0.5",
+        "test3js-core-method": "1.0.5",
+        "test3js-core-subscriptions": "1.0.5",
+        "test3js-net": "1.0.5"
+    },
+    "devDependencies": {
+        "@types/node": "^12.12.6",
+        "dtslint": "^3.4.1",
+        "typescript": "^3.9.5"
+    }
+}

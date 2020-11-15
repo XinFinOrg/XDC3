@@ -1,7 +1,7 @@
 var chai = require('chai');
 var assert = chai.assert;
 var u = require('./helpers/test.utils.js');
-var Personal = require('../packages/web3-eth-personal');
+var Personal = require('../packages/test3js-eth-personal');
 var personal = new Personal();
 
 describe('web3.net', function() {

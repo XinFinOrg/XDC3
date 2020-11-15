@@ -15,7 +15,7 @@ if [ -z "$CI" ]; then
 fi
 
 echo "======================================================================"
-echo "Preparing test site for web3-staging.netlify.app                      "
+echo "Preparing test site for test3js-staging.netlify.app                      "
 echo "======================================================================"
 
 cp packages/web3/dist/web3.min.js scripts/html

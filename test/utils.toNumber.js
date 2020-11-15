@@ -1,5 +1,5 @@
 var assert = require('assert');
-var utils = require('../packages/web3-utils');
+var utils = require('../packages/test3js-utils');
 
 describe('lib/utils/utils', function () {
     describe('hexToNumber', function () {

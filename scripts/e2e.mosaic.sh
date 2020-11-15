@@ -36,9 +36,9 @@ yarn --registry http://localhost:4873
 yarn add web3@e2e --registry http://localhost:4873 --network-timeout 600000
 
 yarn list web3
-yarn list web3-utils
-yarn list web3-core
-yarn list web3-core-promievent
+yarn list test3js-utils
+yarn list test3js-core
+yarn list test3js-core-promievent
 
 cat ./package.json
 

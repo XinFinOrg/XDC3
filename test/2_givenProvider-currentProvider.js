@@ -7,8 +7,8 @@ describe('Web3.providers.currentProvider', function () {
     // Setting of 'global.' requires a deep reset
     beforeEach(function(){
         decache('../packages/web3');
-        decache('../packages/web3-eth');
-        decache('../packages/web3-bzz');
+        decache('../packages/test3js-eth');
+        decache('../packages/test3js-bzz');
     });
 
     describe('should be set if web3.currentProvider is available', function () {
@@ -22,7 +22,7 @@ describe('Web3.providers.currentProvider', function () {
         });
 
         it('when instantiating Eth', function () {
-            var Eth = require('../packages/web3-eth');
+            var Eth = require('../packages/test3js-eth');
             assert.deepEqual(Eth.givenProvider, global.web3.currentProvider);
         });
     });

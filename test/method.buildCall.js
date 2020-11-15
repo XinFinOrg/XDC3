@@ -1,10 +1,10 @@
 var chai = require('chai');
 var assert = chai.assert;
-var formatters = require('../packages/web3-core-helpers/src/formatters.js');
+var formatters = require('../packages/test3js-core-helpers/src/formatters.js');
 var FakeHttpProvider = require('./helpers/FakeHttpProvider');
 var FakeIpcProvider = require('./helpers/FakeIpcProvider');
-var Eth = require('../packages/web3-eth');
-var Method = require('../packages/web3-core-method');
+var Eth = require('../packages/test3js-eth');
+var Method = require('../packages/test3js-core-method');
 
 var address = '0x1234567890123456789012345678901234567891';
 

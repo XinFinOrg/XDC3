@@ -1,7 +1,7 @@
 var chai = require('chai');
 var assert = chai.assert;
-var Method = require('../packages/web3-core-method');
-var errors = require('../packages/web3-core-helpers/src/errors');
+var Method = require('../packages/test3js-core-method');
+var errors = require('../packages/test3js-core-helpers/src/errors');
 
 describe('lib/web3/method', function () {
     describe('validateArgs', function () {

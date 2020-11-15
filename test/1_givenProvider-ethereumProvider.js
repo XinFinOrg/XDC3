@@ -7,8 +7,8 @@ describe('Web3.providers.givenProvider', function () {
     // Setting of 'global.' requires a deep reset
     beforeEach(function(){
         decache('../packages/web3');
-        decache('../packages/web3-eth');
-        decache('../packages/web3-bzz');
+        decache('../packages/test3js-eth');
+        decache('../packages/test3js-bzz');
     });
 
     describe('should be set if window.ethereum is available', function () {
@@ -22,12 +22,12 @@ describe('Web3.providers.givenProvider', function () {
         });
 
         it('when instantiating Eth', function () {
-            var Eth = require('../packages/web3-eth');
+            var Eth = require('../packages/test3js-eth');
             assert.deepEqual(Eth.givenProvider, global.ethereum);
         });
 
         it('when instantiating Bzz', function () {
-            var Bzz = require('../packages/web3-bzz');
+            var Bzz = require('../packages/test3js-bzz');
             assert.deepEqual(Bzz.givenProvider, global.ethereum.bzz);
         });
     });

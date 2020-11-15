@@ -1,6 +1,6 @@
 var chai = require('chai');
 var assert = chai.assert;
-var Eth = require('../packages/web3-eth');
+var Eth = require('../packages/test3js-eth');
 var eth = new Eth();
 
 var tests = [

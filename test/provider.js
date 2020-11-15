@@ -2,9 +2,9 @@ var chai = require('chai');
 var assert = chai.assert;
 var net = require('net');
 
-var Eth = require('../packages/web3-eth');
-var Shh = require('../packages/web3-shh');
-var Net = require('../packages/web3-net');
+var Eth = require('../packages/test3js-eth');
+var Shh = require('../packages/test3js-shh');
+var Net = require('../packages/test3js-net');
 var Web3 = require('../packages/web3');
 
 
