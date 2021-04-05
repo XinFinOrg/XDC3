@@ -25,7 +25,7 @@
 
 "use strict";
 
-const utils = require('web3-utils');
+const utils = require('xftest3-utils');
 const BigNumber = require('bn.js');
 
 

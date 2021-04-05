@@ -19,7 +19,7 @@ npm install web3-eth-accounts
 ## Usage
 
 ```js
-const Web3EthAccounts = require('web3-eth-accounts');
+const Web3EthAccounts = require('xftest3-eth-accounts');
 
 const account = new Web3EthAccounts('ws://localhost:8546');
 account.create();

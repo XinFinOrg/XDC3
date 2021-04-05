@@ -22,7 +22,7 @@
 
 const { callbackify } = require('util');
 var _ = require('underscore');
-var errors = require('web3-core-helpers').errors;
+var errors = require('xftest3-core-helpers').errors;
 var Jsonrpc = require('./jsonrpc.js');
 var BatchManager = require('./batch.js');
 var givenProvider = require('./givenProvider.js');
@@ -50,9 +50,9 @@ var RequestManager = function RequestManager(provider, net) {
 RequestManager.givenProvider = givenProvider;
 
 RequestManager.providers = {
-    WebsocketProvider: require('web3-providers-ws'),
-    HttpProvider: require('web3-providers-http'),
-    IpcProvider: require('web3-providers-ipc')
+    WebsocketProvider: require('xftest3-providers-ws'),
+    HttpProvider: require('xftest3-providers-http'),
+    IpcProvider: require('xftest3-providers-ipc')
 };
 
 

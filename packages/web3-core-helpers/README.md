@@ -17,7 +17,7 @@ npm install web3-core-helpers
 ## Usage
 
 ```js
-const helpers = require('web3-core-helpers');
+const helpers = require('xftest3-core-helpers');
 
 helpers.formatters;
 helpers.errors;
