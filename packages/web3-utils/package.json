@@ -1,6 +1,6 @@
 {
     "name": "xftest3-utils",
-    "version": "1.3.5",
+    "version": "1.3.6-alpha.0",
     "description": "Collection of utility functions used in web3.js.",
     "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/xftest3-utils",
     "license": "LGPL-3.0",
