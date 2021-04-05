@@ -2,7 +2,7 @@
   <img src="assets/logo/web3js.jpg" width="200" alt="web3.js" />
 </p>
 
-# web3.js - Ethereum JavaScript API
+# web3.js - XinFin JavaScript API
 
 [![Gitter][gitter-image]][gitter-url] [![StackExchange][stackexchange-image]][stackexchange-url] [![NPM Package Version][npm-image-version]][npm-url] [![NPM Package Downloads][npm-image-downloads]][npm-url] [![Build Status][actions-image]][actions-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Lerna][lerna-image]][lerna-url] [![Netlify Status][netlify-image]][netlify-url]
 
@@ -106,7 +106,7 @@ If you are using the types in a `commonjs` module, like in a Node app, you just 
 ### Web3 and Angular
 If you are using Ionic/Angular at a version >5 you may run into a build error in which modules `crypto` and `stream` are `undefined`
 
-a work around for this is to go into your node-modules and at `/angular-cli-files/models/webpack-configs/browser.js` change  the `node: false` to `node: {crypto: true, stream: true}` as mentioned [here](https://github.com/ethereum/web3.js/issues/2260#issuecomment-458519127)
+a work around for this is to go into your node-modules and at `/angular-cli-files/models/webpack-configs/browser.js` change  the `node: false` to `node: {crypto: true, stream: true}` as mentioned [here](https://github.com/XinFinOrg/XDC3/issues/2260#issuecomment-458519127)
 
 Another variation of this problem was an issue opned on angular-cli: https://github.com/angular/angular-cli/issues/1548
 
@@ -162,13 +162,13 @@ This project adheres to the [Release Guidelines](./REVIEW.md).
 -   Ruby: [ethereum.rb](https://github.com/EthWorks/ethereum.rb)
 -   Scala: [web3j-scala](https://github.com/mslinn/web3j-scala)
 
-[repo]: https://github.com/ethereum/web3.js
+[repo]: https://github.com/XinFinOrg/XDC3
 [docs]: http://web3js.readthedocs.io/
 [npm-image-version]: https://img.shields.io/npm/v/web3.svg
 [npm-image-downloads]: https://img.shields.io/npm/dm/web3.svg
 [npm-url]: https://npmjs.org/package/web3
-[actions-image]: https://github.com/ethereum/web3.js/workflows/Build/badge.svg
-[actions-url]: https://github.com/ethereum/web3.js/actions
+[actions-image]: https://github.com/XinFinOrg/XDC3/workflows/Build/badge.svg
+[actions-url]: https://github.com/XinFinOrg/XDC3/actions
 [deps-dev-image]: https://david-dm.org/ethereum/web3.js/1.x/dev-status.svg
 [deps-dev-url]: https://david-dm.org/ethereum/web3.js/1.x?type=dev
 [dep-dev-image]: https://david-dm.org/ethereum/web3.js/dev-status.svg
@@ -188,4 +188,4 @@ This project adheres to the [Release Guidelines](./REVIEW.md).
 
 ## Semantic versioning
 
-This project follows [semver](https://semver.org/) as closely as possible **from version 1.3.0 onwards**. Earlier minor version bumps [might](https://github.com/ethereum/web3.js/issues/3758) have included breaking behavior changes.
+This project follows [semver](https://semver.org/) as closely as possible **from version 1.3.0 onwards**. Earlier minor version bumps [might](https://github.com/XinFinOrg/XDC3/issues/3758) have included breaking behavior changes.

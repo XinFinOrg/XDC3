@@ -34,7 +34,7 @@ console.log(Web3Utils);
 All the TypeScript typings are placed in the `types` folder.
 
 [docs]: http://web3js.readthedocs.io/en/1.0/
-[repo]: https://github.com/ethereum/web3.js
+[repo]: https://github.com/XinFinOrg/XDC3
 [npm-image]: https://img.shields.io/npm/v/web3-utils.svg
 [npm-url]: https://npmjs.org/package/web3-utils
 [deps-image]: https://david-dm.org/ethereum/web3.js/1.x/status.svg?path=packages/web3-utils
