@@ -1,6 +1,6 @@
 {
     "name": "xftest3-eth-abi",
-    "version": "1.3.6-alpha.0",
+    "version": "1.3.7-alpha.0",
     "description": "Web3 module encode and decode EVM in/output.",
     "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/xftest3-eth-abi",
     "license": "LGPL-3.0",
@@ -16,7 +16,7 @@
     "dependencies": {
         "@ethersproject/abi": "5.0.7",
         "underscore": "1.9.1",
-        "xftest3-utils": "1.3.6-alpha.0"
+        "xftest3-utils": "1.3.7-alpha.0"
     },
     "devDependencies": {
         "dtslint": "^3.4.1",
