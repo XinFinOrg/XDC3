@@ -1,9 +1,10 @@
-example/js
-node_modules
+*.idea
 test
+dist
+docs
+coverage
+scripts
 .gitignore
 .editorconfig
-.travis.yml
 .npmignore
-component.json
-testling.html
+.DS_Store
