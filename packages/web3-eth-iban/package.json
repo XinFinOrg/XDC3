@@ -1,8 +1,8 @@
 {
-    "name": "web3-eth-iban",
+    "name": "xftest3-eth-iban",
     "version": "1.3.4",
     "description": "This package converts Ethereum addresses to IBAN addresses a vice versa.",
-    "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/web3-eth-iban",
+    "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/xftest3-eth-iban",
     "license": "LGPL-3.0",
     "engines": {
         "node": ">=8.0.0"
@@ -15,7 +15,7 @@
     "main": "lib/index.js",
     "dependencies": {
         "bn.js": "^4.11.9",
-        "web3-utils": "1.3.4"
+        "xftest3-utils": "1.3.4"
     },
     "devDependencies": {
         "dtslint": "^3.4.1",
