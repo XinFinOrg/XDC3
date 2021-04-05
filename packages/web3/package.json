@@ -1,6 +1,6 @@
 {
     "name": "xftest3",
-    "version": "1.3.5-alpha.0",
+    "version": "1.3.5",
     "description": "XinFin JavaScript API",
     "repository": "https://github.com/XinFinOrg/XDC3",
     "license": "LGPL-3.0",
@@ -12,7 +12,7 @@
         "url": "https://github.com/XinFinOrg/XDC3/issues"
     },
     "keywords": [
-        "Ethereum",
+        "XinFin XDC",
         "JavaScript",
         "API"
     ],
@@ -50,13 +50,13 @@
         }
     ],
     "dependencies": {
-        "xftest3-bzz": "1.3.5-alpha.0",
-        "xftest3-core": "1.3.5-alpha.0",
-        "xftest3-eth": "1.3.5-alpha.0",
-        "xftest3-eth-personal": "1.3.5-alpha.0",
-        "xftest3-net": "1.3.5-alpha.0",
-        "xftest3-shh": "1.3.5-alpha.0",
-        "xftest3-utils": "1.3.5-alpha.0"
+        "xftest3-bzz": "1.3.5",
+        "xftest3-core": "1.3.5",
+        "xftest3-eth": "1.3.5",
+        "xftest3-eth-personal": "1.3.5",
+        "xftest3-net": "1.3.5",
+        "xftest3-shh": "1.3.5",
+        "xftest3-utils": "1.3.5"
     },
     "devDependencies": {
         "@types/node": "^12.12.6",
