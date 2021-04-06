@@ -42,6 +42,15 @@ var isNot = function(value) {
     return (_.isUndefined(value) || _.isNull(value));
 };
 
+/**
+ * 
+ * @param {Object} account 
+ */
+var convertToXdcAccount = function(account) {
+    account.address = utils.toXdcAddress(account.address);
+    return account;
+}
+
 var Accounts = function Accounts() {
     var _this = this;
 
@@ -116,7 +125,7 @@ Accounts.prototype._addAccountFunctions = function(account) {
 };
 
 Accounts.prototype.create = function create(entropy) {
-    return this._addAccountFunctions(Account.create(entropy || utils.randomHex(32)));
+    return this._addAccountFunctions(convertToXdcAccount(Account.create(entropy || utils.randomHex(32))));
 };
 
 Accounts.prototype.privateKeyToAccount = function privateKeyToAccount(privateKey, ignoreLength) {
@@ -129,7 +138,7 @@ Accounts.prototype.privateKeyToAccount = function privateKeyToAccount(privateKey
         throw new Error("Private key must be 32 bytes long");
     }
 
-    return this._addAccountFunctions(Account.fromPrivate(privateKey));
+    return this._addAccountFunctions(convertToXdcAccount(Account.fromPrivate(privateKey)));
 };
 
 Accounts.prototype.signTransaction = function signTransaction(tx, privateKey, callback) {
