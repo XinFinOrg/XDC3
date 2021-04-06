@@ -312,7 +312,7 @@ var toChecksumAddress = function (address) {
             checksumAddress += address[i];
         }
     }
-    return checksumAddress;
+    return utils.fromXdcAddress(checksumAddress);
 };
 
 /**

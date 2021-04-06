@@ -111,6 +111,8 @@ ABICoder.prototype.encodeParameters = function (types, params) {
 
         param = self.formatParam(type, param);
 
+        if (type==="address") param = utils.fromXdcAddress(param);
+        
         // Format params for tuples
         if (typeof type === 'string' && type.includes('tuple')) {
             const coder = ethersAbiCoder._getCoder(ParamType.from(type));

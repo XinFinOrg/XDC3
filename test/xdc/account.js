@@ -5,12 +5,14 @@ describe("xdc3.eth.acconuts", function () {
     it("xdc3.eth.acconuts - create", function () {
         return new Promise((resolve, reject) => {
             const Xdc3 = require("../../packages/web3");
+            const Utils = require("../../packages/web3-utils");
             const xdc3 = new Xdc3(
                 new Xdc3.providers.WebsocketProvider(provider)
             );
 
             const account = xdc3.eth.accounts.create();
-            resolve();
+            if (Utils.isXdcAddress(account.address)){ resolve();}
+            else{reject();}
         });
     });
 
@@ -27,6 +29,8 @@ describe("xdc3.eth.acconuts", function () {
                 accounts[0].privateKey
             );
 
+            if (!Utils.isXdcAddress(account.address)){ reject();}
+            
             await xdc3.eth.getTransactionCount(
                 Utils.toXdcAddress(account.address)
             );
