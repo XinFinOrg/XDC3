@@ -1,6 +1,6 @@
 {
     "name": "xdc3-eth",
-    "version": "1.2.134",
+    "version": "1.2.135-alpha.0",
     "description": "Web3 module to interact with the Ethereum blockchain and smart contracts.",
     "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/xftest3-eth",
     "license": "LGPL-3.0",
@@ -15,18 +15,18 @@
     "main": "lib/index.js",
     "dependencies": {
         "underscore": "1.9.1",
-        "xdc3-core": "1.2.134",
-        "xdc3-core-helpers": "1.2.134",
-        "xdc3-core-method": "1.2.134",
-        "xdc3-core-subscriptions": "1.2.134",
-        "xdc3-eth-abi": "1.2.134",
-        "xdc3-eth-accounts": "1.2.134",
-        "xdc3-eth-contract": "1.2.134",
-        "xdc3-eth-ens": "1.2.134",
-        "xdc3-eth-iban": "1.2.134",
-        "xdc3-eth-personal": "1.2.134",
-        "xdc3-net": "1.2.134",
-        "xdc3-utils": "1.2.134"
+        "xdc3-core": "1.2.135-alpha.0",
+        "xdc3-core-helpers": "1.2.135-alpha.0",
+        "xdc3-core-method": "1.2.135-alpha.0",
+        "xdc3-core-subscriptions": "1.2.135-alpha.0",
+        "xdc3-eth-abi": "1.2.135-alpha.0",
+        "xdc3-eth-accounts": "1.2.135-alpha.0",
+        "xdc3-eth-contract": "1.2.135-alpha.0",
+        "xdc3-eth-ens": "1.2.135-alpha.0",
+        "xdc3-eth-iban": "1.2.135-alpha.0",
+        "xdc3-eth-personal": "1.2.135-alpha.0",
+        "xdc3-net": "1.2.135-alpha.0",
+        "xdc3-utils": "1.2.135-alpha.0"
     },
     "devDependencies": {
         "dtslint": "^3.4.1",
