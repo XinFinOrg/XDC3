@@ -1,6 +1,6 @@
 {
     "name": "xdc3-eth-contract",
-    "version": "1.2.135",
+    "version": "1.2.136",
     "description": "Web3 module to interact with Ethereum smart contracts.",
     "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/xdc3-eth-contract",
     "license": "LGPL-3.0",
@@ -16,13 +16,13 @@
     "dependencies": {
         "@types/bn.js": "^4.11.5",
         "underscore": "1.9.1",
-        "xdc3-core": "1.2.135",
-        "xdc3-core-helpers": "1.2.135",
-        "xdc3-core-method": "1.2.135",
-        "xdc3-core-promievent": "1.2.135",
-        "xdc3-core-subscriptions": "1.2.135",
-        "xdc3-eth-abi": "1.2.135",
-        "xdc3-utils": "1.2.135"
+        "xdc3-core": "1.2.136",
+        "xdc3-core-helpers": "1.2.136",
+        "xdc3-core-method": "1.2.136",
+        "xdc3-core-promievent": "1.2.136",
+        "xdc3-core-subscriptions": "1.2.136",
+        "xdc3-eth-abi": "1.2.136",
+        "xdc3-utils": "1.2.136"
     },
     "devDependencies": {
         "dtslint": "^3.4.1",

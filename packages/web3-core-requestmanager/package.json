@@ -1,6 +1,6 @@
 {
     "name": "xdc3-core-requestmanager",
-    "version": "1.2.135",
+    "version": "1.2.136",
     "description": "Web3 module to handle requests to external providers.",
     "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/xdc3-core-requestmanager",
     "license": "LGPL-3.0",
@@ -14,10 +14,10 @@
     "dependencies": {
         "underscore": "1.9.1",
         "util": "^0.12.0",
-        "xdc3-core-helpers": "1.2.135",
-        "xdc3-providers-http": "1.2.135",
-        "xdc3-providers-ipc": "1.2.135",
-        "xdc3-providers-ws": "1.2.135"
+        "xdc3-core-helpers": "1.2.136",
+        "xdc3-providers-http": "1.2.136",
+        "xdc3-providers-ipc": "1.2.136",
+        "xdc3-providers-ws": "1.2.136"
     },
     "gitHead": "133a4266feb98a9f1eaafca05bf5bb56fb2a9f94"
 }

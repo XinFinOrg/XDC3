@@ -1,6 +1,6 @@
 {
     "name": "xdc3-bzz",
-    "version": "1.2.135",
+    "version": "1.2.136",
     "description": "Web3 module to interact with the Swarm network.",
     "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/xdc3-bzz",
     "license": "LGPL-3.0",
