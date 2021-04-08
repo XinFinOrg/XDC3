@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {stripHexPrefix} from 'xdc3-rud-utils';
+import {stripHexPrefix} from 'xdc3-utils';
 
 // $ExpectType string
 stripHexPrefix('0xd1220a0cf47c7b9be7a2e6ba89f429762e7b9adb');

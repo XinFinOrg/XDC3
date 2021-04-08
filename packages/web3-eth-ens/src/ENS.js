@@ -22,8 +22,8 @@
 
 var _ = require('underscore');
 var config = require('./config');
-var formatters = require('xdc3-rud-core-helpers').formatters;
-var utils = require('xdc3-rud-utils');
+var formatters = require('xdc3-core-helpers').formatters;
+var utils = require('xdc3-utils');
 var Registry = require('./contracts/Registry');
 var ResolverMethodHandler = require('./lib/ResolverMethodHandler');
 var contenthash = require('./lib/contentHash');

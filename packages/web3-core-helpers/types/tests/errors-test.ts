@@ -17,7 +17,7 @@
  * @date 2019
  */
 
-import { errors, WebSocketEvent } from 'xdc3-rud-core-helpers';
+import { errors, WebSocketEvent } from 'xdc3-core-helpers';
 
 // $ExpectType Error
 errors.ErrorResponse(new Error('hey'));

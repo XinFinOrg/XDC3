@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {isHex} from 'xdc3-rud-utils';
+import {isHex} from 'xdc3-utils';
 
 // $ExpectType boolean
 isHex('0xc1912');

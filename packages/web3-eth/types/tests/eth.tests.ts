@@ -18,7 +18,7 @@
  * @date 2018
  */
 
-import {Log} from 'xdc3-rud-core';
+import {Log} from 'xdc3-core';
 import {
     BlockTransactionObject,
     BlockTransactionString,
@@ -33,7 +33,7 @@ import {
     hardfork,
     Common,
     chain
-} from 'xdc3-rud-eth';
+} from 'xdc3-eth';
 import BN = require('bn.js');
 import BigNumber from 'bignumber.js';
 

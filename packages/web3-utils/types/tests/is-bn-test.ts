@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {isBN} from 'xdc3-rud-utils';
+import {isBN} from 'xdc3-utils';
 
 // $ExpectType boolean
 isBN(7);

@@ -37,16 +37,16 @@ import {
     BlockNumber,
     LogsOptions,
     PastLogsOptions
-} from 'xdc3-rud-core';
-import {Subscription} from 'xdc3-rud-core-subscriptions';
-import {AbiCoder} from 'xdc3-rud-eth-abi';
-import {Accounts} from 'xdc3-rud-eth-accounts';
-import {Contract, ContractOptions} from 'xdc3-rud-eth-contract';
-import {Ens} from 'xdc3-rud-eth-ens';
-import {Iban} from 'xdc3-rud-eth-iban';
-import {Personal} from 'xdc3-rud-eth-personal';
-import {Network} from 'xdc3-rud-net';
-import {AbiItem} from 'xdc3-rud-utils';
+} from 'xdc3-core';
+import {Subscription} from 'xdc3-core-subscriptions';
+import {AbiCoder} from 'xdc3-eth-abi';
+import {Accounts} from 'xdc3-eth-accounts';
+import {Contract, ContractOptions} from 'xdc3-eth-contract';
+import {Ens} from 'xdc3-eth-ens';
+import {Iban} from 'xdc3-eth-iban';
+import {Personal} from 'xdc3-eth-personal';
+import {Network} from 'xdc3-net';
+import {AbiItem} from 'xdc3-utils';
 import {BigNumber} from 'bignumber.js';
 import BN = require('bn.js');
 
@@ -58,7 +58,7 @@ export {
     hardfork,
     Common,
     chain
-} from 'xdc3-rud-core';
+} from 'xdc3-core';
 
 export class Eth {
     constructor();

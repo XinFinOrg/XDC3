@@ -22,11 +22,11 @@
 
 "use strict";
 
-var core = require('xdc3-rud-core');
-var Subscriptions = require('xdc3-rud-core-subscriptions').subscriptions;
-var Method = require('xdc3-rud-core-method');
-// var formatters = require('xdc3-rud-core-helpers').formatters;
-var Net = require('xdc3-rud-net');
+var core = require('xdc3-core');
+var Subscriptions = require('xdc3-core-subscriptions').subscriptions;
+var Method = require('xdc3-core-method');
+// var formatters = require('xdc3-core-helpers').formatters;
+var Net = require('xdc3-net');
 
 
 var Shh = function Shh() {

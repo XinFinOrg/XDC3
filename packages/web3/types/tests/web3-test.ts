@@ -17,10 +17,10 @@
  * @date 2018
  */
 
-import Web3 from 'xdc3-rud';
+import Web3 from 'xdc3';
 import * as net from 'net';
-import { AbstractProvider, RequestArguments } from 'xdc3-rud-core';
-import { JsonRpcPayload, JsonRpcResponse } from 'xdc3-rud-core-helpers';
+import { AbstractProvider, RequestArguments } from 'xdc3-core';
+import { JsonRpcPayload, JsonRpcResponse } from 'xdc3-core-helpers';
 
 // $ExpectType Utils
 Web3.utils;

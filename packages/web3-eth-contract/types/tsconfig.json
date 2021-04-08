@@ -11,7 +11,7 @@
         "allowSyntheticDefaultImports": false,
         "baseUrl": ".",
         "paths": {
-            "xdc3-rud-eth-contract": ["."]
+            "xdc3-eth-contract": ["."]
         }
     }
 }

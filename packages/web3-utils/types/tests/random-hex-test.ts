@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {randomHex} from 'xdc3-rud-utils';
+import {randomHex} from 'xdc3-utils';
 
 // $ExpectType string
 randomHex(32);

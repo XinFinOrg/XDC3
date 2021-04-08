@@ -17,7 +17,7 @@
  * @date 2018
  */
 
-import { formatters } from 'xdc3-rud-core-helpers';
+import { formatters } from 'xdc3-core-helpers';
 
 // $ExpectType number
 formatters.outputBigNumberFormatter(100);

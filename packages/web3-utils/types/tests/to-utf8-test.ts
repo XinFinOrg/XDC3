@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {toUtf8} from 'xdc3-rud-utils';
+import {toUtf8} from 'xdc3-utils';
 
 // $ExpectType string
 toUtf8('0x49206861766520313030e282ac');

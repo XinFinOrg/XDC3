@@ -19,8 +19,8 @@
  * @date 2018
  */
 
-import { RLPEncodedTransaction } from 'xdc3-rud-core';
-import { Personal } from 'xdc3-rud-eth-personal';
+import { RLPEncodedTransaction } from 'xdc3-core';
+import { Personal } from 'xdc3-eth-personal';
 
 // $ExpectType Personal
 const personal_empty = new Personal();

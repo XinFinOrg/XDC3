@@ -19,7 +19,7 @@
  */
 
 import * as net from 'net';
-import { provider, RLPEncodedTransaction, TransactionConfig, BatchRequest, Providers, Extension } from 'xdc3-rud-core';
+import { provider, RLPEncodedTransaction, TransactionConfig, BatchRequest, Providers, Extension } from 'xdc3-core';
 
 export class Personal {
     constructor();

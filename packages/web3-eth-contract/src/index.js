@@ -19,7 +19,7 @@
  *
  * To initialize a contract use:
  *
- *  var Contract = require('xdc3-rud-eth-contract');
+ *  var Contract = require('xdc3-eth-contract');
  *  Contract.setProvider('ws://localhost:8546');
  *  var contract = new Contract(abi, address, ...);
  *
@@ -32,14 +32,14 @@
 
 
 var _ = require('underscore');
-var core = require('xdc3-rud-core');
-var Method = require('xdc3-rud-core-method');
-var utils = require('xdc3-rud-utils');
-var Subscription = require('xdc3-rud-core-subscriptions').subscription;
-var formatters = require('xdc3-rud-core-helpers').formatters;
-var errors = require('xdc3-rud-core-helpers').errors;
-var promiEvent = require('xdc3-rud-core-promievent');
-var abi = require('xdc3-rud-eth-abi');
+var core = require('xdc3-core');
+var Method = require('xdc3-core-method');
+var utils = require('xdc3-utils');
+var Subscription = require('xdc3-core-subscriptions').subscription;
+var formatters = require('xdc3-core-helpers').formatters;
+var errors = require('xdc3-core-helpers').errors;
+var promiEvent = require('xdc3-core-promievent');
+var abi = require('xdc3-eth-abi');
 
 
 /**

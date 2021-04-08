@@ -18,13 +18,13 @@
  */
 
 import * as net from 'net';
-import { Bzz } from 'xdc3-rud-bzz';
-import { BatchRequest, provider, Providers, Extension } from 'xdc3-rud-core';
-import { Eth } from 'xdc3-rud-eth';
-import { Personal } from 'xdc3-rud-eth-personal';
-import { Network } from 'xdc3-rud-net';
-import { Shh } from 'xdc3-rud-shh';
-import { Utils } from 'xdc3-rud-utils';
+import { Bzz } from 'xdc3-bzz';
+import { BatchRequest, provider, Providers, Extension } from 'xdc3-core';
+import { Eth } from 'xdc3-eth';
+import { Personal } from 'xdc3-eth-personal';
+import { Network } from 'xdc3-net';
+import { Shh } from 'xdc3-shh';
+import { Utils } from 'xdc3-utils';
 
 export default class Web3 {
     constructor();

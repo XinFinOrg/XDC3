@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {utf8ToHex} from 'xdc3-rud-utils';
+import {utf8ToHex} from 'xdc3-utils';
 
 // $ExpectType string
 utf8ToHex('I have 100£');

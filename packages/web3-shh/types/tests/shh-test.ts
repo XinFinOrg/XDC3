@@ -17,7 +17,7 @@
  * @date 2018
  */
 
-import { Info, Notification, Shh } from 'xdc3-rud-shh';
+import { Info, Notification, Shh } from 'xdc3-shh';
 
 // $ExpectType Shh
 const shh_empty = new Shh();

@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {toTwosComplement} from 'xdc3-rud-utils';
+import {toTwosComplement} from 'xdc3-utils';
 
 // $ExpectType string
 toTwosComplement(4);

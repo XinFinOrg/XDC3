@@ -21,8 +21,8 @@
  */
 
 import * as net from 'net';
-import { IpcProvider } from 'xdc3-rud-providers';
-import { JsonRpcResponse } from 'xdc3-rud-core-helpers';
+import { IpcProvider } from 'xdc3-providers';
+import { JsonRpcResponse } from 'xdc3-core-helpers';
 
 const ipcProvider = new IpcProvider(
     '/Users/myuser/Library/Ethereum/geth.ipc',

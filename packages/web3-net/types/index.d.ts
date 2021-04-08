@@ -17,6 +17,6 @@
  * @date 2018
  */
 
-import { NetworkBase } from 'xdc3-rud-core';
+import { NetworkBase } from 'xdc3-core';
 
 export class Network extends NetworkBase {}

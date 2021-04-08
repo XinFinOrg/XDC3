@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {fromDecimal} from 'xdc3-rud-utils';
+import {fromDecimal} from 'xdc3-utils';
 
 // $ExpectType string
 fromDecimal('232');

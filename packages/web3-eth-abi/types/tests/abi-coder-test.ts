@@ -20,7 +20,7 @@
  * @date 2018
  */
 
-import { AbiCoder } from 'xdc3-rud-eth-abi';
+import { AbiCoder } from 'xdc3-eth-abi';
 
 const abiCoder = new AbiCoder();
 

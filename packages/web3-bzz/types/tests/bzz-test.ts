@@ -17,7 +17,7 @@
  * @date 2018
  */
 
-import { Bzz } from 'xdc3-rud-bzz';
+import { Bzz } from 'xdc3-bzz';
 
 // $ExpectType Bzz
 const bzz_empty = new Bzz();

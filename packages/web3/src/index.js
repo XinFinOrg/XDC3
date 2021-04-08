@@ -29,13 +29,13 @@
 
 
 var version = require('../package.json').version;
-var core = require('xdc3-rud-core');
-var Eth = require('xdc3-rud-eth');
-var Net = require('xdc3-rud-net');
-var Personal = require('xdc3-rud-eth-personal');
-var Shh = require('xdc3-rud-shh');
-var Bzz = require('xdc3-rud-bzz');
-var utils = require('xdc3-rud-utils');
+var core = require('xdc3-core');
+var Eth = require('xdc3-eth');
+var Net = require('xdc3-net');
+var Personal = require('xdc3-eth-personal');
+var Shh = require('xdc3-shh');
+var Bzz = require('xdc3-bzz');
+var utils = require('xdc3-utils');
 
 var Web3 = function Web3() {
     var _this = this;

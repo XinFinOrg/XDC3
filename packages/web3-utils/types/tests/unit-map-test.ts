@@ -20,7 +20,7 @@
  * @date 2018
  */
 
-import {unitMap} from 'xdc3-rud-utils';
+import {unitMap} from 'xdc3-utils';
 
 // $ExpectType Units
 unitMap();

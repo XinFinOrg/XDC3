@@ -17,7 +17,7 @@
  * @date 2018
  */
 
-import { AbiInput, AbiItem } from 'xdc3-rud-utils';
+import { AbiInput, AbiItem } from 'xdc3-utils';
 
 export class AbiCoder {
     encodeFunctionSignature(functionName: string | AbiItem): string;

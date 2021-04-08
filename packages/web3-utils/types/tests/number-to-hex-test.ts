@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {numberToHex} from 'xdc3-rud-utils';
+import {numberToHex} from 'xdc3-utils';
 
 // $ExpectType string
 numberToHex('232');

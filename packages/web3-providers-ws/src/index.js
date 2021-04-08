@@ -24,7 +24,7 @@
 
 var EventEmitter = require('eventemitter3');
 var helpers = require('./helpers.js');
-var errors = require('xdc3-rud-core-helpers').errors;
+var errors = require('xdc3-core-helpers').errors;
 var Ws = require('websocket').w3cwebsocket;
 
 /**

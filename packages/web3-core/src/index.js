@@ -20,7 +20,7 @@
  * @date 2017
  */
 
-const requestManager = require("xdc3-rud-core-requestmanager");
+const requestManager = require("xdc3-core-requestmanager");
 const extend = require("./extend");
 
 const packageInit = (pkg, args) => {

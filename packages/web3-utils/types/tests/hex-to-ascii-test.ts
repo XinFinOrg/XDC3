@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {hexToAscii} from 'xdc3-rud-utils';
+import {hexToAscii} from 'xdc3-utils';
 
 // $ExpectType string
 hexToAscii('0x4920686176652031303021');

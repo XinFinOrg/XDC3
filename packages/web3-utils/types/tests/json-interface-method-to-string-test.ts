@@ -20,7 +20,7 @@
  * @date 2018
  */
 
-import {jsonInterfaceMethodToString, AbiItem} from 'xdc3-rud-utils';
+import {jsonInterfaceMethodToString, AbiItem} from 'xdc3-utils';
 
 const abiItem: AbiItem = {
     anonymous: false,

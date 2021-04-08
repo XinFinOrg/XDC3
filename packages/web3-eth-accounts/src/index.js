@@ -23,8 +23,8 @@
 'use strict';
 
 var _ = require('underscore');
-var core = require('xdc3-rud-core');
-var Method = require('xdc3-rud-core-method');
+var core = require('xdc3-core');
+var Method = require('xdc3-core-method');
 var Account = require('eth-lib/lib/account');
 var Hash = require('eth-lib/lib/hash');
 var RLP = require('eth-lib/lib/rlp');// jshint ignore:line
@@ -32,8 +32,8 @@ var Bytes = require('eth-lib/lib/bytes');// jshint ignore:line
 var cryp = (typeof global === 'undefined') ? require('crypto-browserify') : require('crypto');
 var scrypt = require('scrypt-js');
 var uuid = require('uuid');
-var utils = require('xdc3-rud-utils');
-var helpers = require('xdc3-rud-core-helpers');
+var utils = require('xdc3-utils');
+var helpers = require('xdc3-core-helpers');
 var Transaction = require('ethereumjs-tx').Transaction;
 var Common = require('ethereumjs-common').default;
 

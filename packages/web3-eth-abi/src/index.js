@@ -23,7 +23,7 @@
 
 var Buffer = require('buffer').Buffer;
 var _ = require('underscore');
-var utils = require('xdc3-rud-utils');
+var utils = require('xdc3-utils');
 
 var EthersAbiCoder = require('@ethersproject/abi').AbiCoder;
 var ParamType = require('@ethersproject/abi').ParamType;

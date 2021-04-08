@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {getUnitValue} from 'xdc3-rud-utils';
+import {getUnitValue} from 'xdc3-utils';
 
 // $ExpectType string
 getUnitValue('ether');

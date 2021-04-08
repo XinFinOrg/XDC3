@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {bytesToHex} from 'xdc3-rud-utils';
+import {bytesToHex} from 'xdc3-utils';
 
 // $ExpectType string
 bytesToHex([72]);

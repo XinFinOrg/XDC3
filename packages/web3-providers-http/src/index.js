@@ -22,7 +22,7 @@
  * @date 2015
  */
 
-var errors = require('xdc3-rud-core-helpers').errors;
+var errors = require('xdc3-core-helpers').errors;
 var XHR2 = require('xhr2-cookies').XMLHttpRequest; // jshint ignore: line
 var http = require('http');
 var https = require('https');

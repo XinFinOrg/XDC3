@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {sha3} from 'xdc3-rud-utils';
+import {sha3} from 'xdc3-utils';
 
 // $ExpectType string | null
 sha3('234');

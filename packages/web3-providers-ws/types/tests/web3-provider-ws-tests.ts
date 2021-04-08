@@ -20,8 +20,8 @@
  * @date 2018
  */
 
-import { WebsocketProviderOptions, JsonRpcResponse } from 'xdc3-rud-core-helpers';
-import { WebsocketProvider } from 'xdc3-rud-providers';
+import { WebsocketProviderOptions, JsonRpcResponse } from 'xdc3-core-helpers';
+import { WebsocketProvider } from 'xdc3-providers';
 
 const options: WebsocketProviderOptions = {
     timeout: 30000,

@@ -23,9 +23,9 @@
 "use strict";
 
 var _ = require('underscore');
-var errors = require('xdc3-rud-core-helpers').errors;
+var errors = require('xdc3-core-helpers').errors;
 var EventEmitter = require('eventemitter3');
-var formatters = require('xdc3-rud-core-helpers').formatters;
+var formatters = require('xdc3-core-helpers').formatters;
 
 function Subscription(options) {
     EventEmitter.call(this);

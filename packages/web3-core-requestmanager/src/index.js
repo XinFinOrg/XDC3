@@ -22,7 +22,7 @@
 
 const { callbackify } = require('util');
 var _ = require('underscore');
-var errors = require('xdc3-rud-core-helpers').errors;
+var errors = require('xdc3-core-helpers').errors;
 var Jsonrpc = require('./jsonrpc.js');
 var BatchManager = require('./batch.js');
 var givenProvider = require('./givenProvider.js');
@@ -50,9 +50,9 @@ var RequestManager = function RequestManager(provider, net) {
 RequestManager.givenProvider = givenProvider;
 
 RequestManager.providers = {
-    WebsocketProvider: require('xdc3-rud-providers-ws'),
-    HttpProvider: require('xdc3-rud-providers-http'),
-    IpcProvider: require('xdc3-rud-providers-ipc')
+    WebsocketProvider: require('xdc3-providers-ws'),
+    HttpProvider: require('xdc3-providers-http'),
+    IpcProvider: require('xdc3-providers-ipc')
 };
 
 

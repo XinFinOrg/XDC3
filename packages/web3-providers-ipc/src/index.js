@@ -23,7 +23,7 @@
 "use strict";
 
 var _ = require('underscore');
-var errors = require('xdc3-rud-core-helpers').errors;
+var errors = require('xdc3-core-helpers').errors;
 var oboe = require('oboe');
 
 

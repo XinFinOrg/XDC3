@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {hexToBytes} from 'xdc3-rud-utils';
+import {hexToBytes} from 'xdc3-utils';
 
 // $ExpectType number[]
 hexToBytes('0x000000ea');

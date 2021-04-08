@@ -22,7 +22,7 @@
 import * as http from 'http';
 import * as https from 'https';
 
-import { HttpProviderBase, JsonRpcResponse } from 'xdc3-rud-core-helpers';
+import { HttpProviderBase, JsonRpcResponse } from 'xdc3-core-helpers';
 
 export interface HttpHeader {
     name: string;

@@ -17,7 +17,7 @@
  * @date 2018
  */
 
-import {JsonRpcPayload} from 'xdc3-rud-core-helpers';
+import {JsonRpcPayload} from 'xdc3-core-helpers';
 
 export interface Method {
     name: string;

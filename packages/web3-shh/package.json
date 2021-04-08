@@ -1,6 +1,6 @@
 {
-    "name": "xdc3-rud-shh",
-    "version": "1.3.7",
+    "name": "xdc3-shh",
+    "version": "1.0.134",
     "description": "Web3 module to interact with the Whisper messaging protocol.",
     "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/xftest3-shh",
     "license": "LGPL-3.0",
@@ -15,10 +15,10 @@
     },
     "main": "lib/index.js",
     "dependencies": {
-        "xdc3-rud-core": "1.3.7",
-        "xdc3-rud-core-method": "1.3.7",
-        "xdc3-rud-core-subscriptions": "1.3.7",
-        "xdc3-rud-net": "1.3.7"
+        "xdc3-core": "1.0.134",
+        "xdc3-core-method": "1.0.134",
+        "xdc3-core-subscriptions": "1.0.134",
+        "xdc3-net": "1.0.134"
     },
     "devDependencies": {
         "@types/node": "^12.12.6",
