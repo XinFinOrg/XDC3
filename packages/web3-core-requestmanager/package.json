@@ -18,5 +18,6 @@
         "xdc3-providers-http": "1.2.135-alpha.0",
         "xdc3-providers-ipc": "1.2.135-alpha.0",
         "xdc3-providers-ws": "1.2.135-alpha.0"
-    }
+    },
+    "gitHead": "10222b17d48425f5f7983c7b836d94e69ba20a6e"
 }

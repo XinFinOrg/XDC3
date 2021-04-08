@@ -1,4 +1,4 @@
-import { BaseAPISchema } from 'xdc3-eth2-core'
+import { BaseAPISchema } from 'xdc3-eth2-core2'
 
 export const DefaultSchema: BaseAPISchema = {
     packageName: 'eth2-beaconchain',
