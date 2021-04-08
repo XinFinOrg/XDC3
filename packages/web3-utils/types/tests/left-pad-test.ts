@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {leftPad} from 'web3-utils';
+import {leftPad} from 'xdc3-rud-utils';
 
 const bigNumber = new BN(3);
 // $ExpectType string

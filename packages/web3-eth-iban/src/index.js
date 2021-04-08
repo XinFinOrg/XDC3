@@ -25,7 +25,7 @@
 
 "use strict";
 
-const utils = require('xftest3-utils');
+const utils = require('xdc3-rud-utils');
 const BigNumber = require('bn.js');
 
 

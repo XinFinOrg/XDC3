@@ -17,11 +17,11 @@
  * @date 2018
  */
 
-import { TransactionRevertInstructionError } from 'web3-core-helpers';
-import { TransactionReceipt } from 'web3-core';
-import { Contract } from 'web3-eth-contract';
-import { Ens, ContentHash } from 'web3-eth-ens';
-import { Eth } from 'web3-eth';
+import { TransactionRevertInstructionError } from 'xdc3-rud-core-helpers';
+import { TransactionReceipt } from 'xdc3-rud-core';
+import { Contract } from 'xdc3-rud-eth-contract';
+import { Ens, ContentHash } from 'xdc3-rud-eth-ens';
+import { Eth } from 'xdc3-rud-eth';
 
 const ens = new Ens(new Eth('http://localhost:8545'));
 

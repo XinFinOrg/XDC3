@@ -22,12 +22,12 @@
 
 "use strict";
 
-var core = require('xftest3-core');
-var Method = require('xftest3-core-method');
-var utils = require('xftest3-utils');
-var Net = require('xftest3-net');
+var core = require('xdc3-rud-core');
+var Method = require('xdc3-rud-core-method');
+var utils = require('xdc3-rud-utils');
+var Net = require('xdc3-rud-net');
 
-var formatters = require('xftest3-core-helpers').formatters;
+var formatters = require('xdc3-rud-core-helpers').formatters;
 
 
 var Personal = function Personal() {

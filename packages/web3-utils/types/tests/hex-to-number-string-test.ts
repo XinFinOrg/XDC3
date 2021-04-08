@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {hexToNumberString} from 'web3-utils';
+import {hexToNumberString} from 'xdc3-rud-utils';
 
 // $ExpectType string
 hexToNumberString('0xea');

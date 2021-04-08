@@ -11,7 +11,7 @@
         "allowSyntheticDefaultImports": false,
         "baseUrl": ".",
         "paths": {
-            "web3-eth-ens": ["."]
+            "xdc3-rud-eth-ens": ["."]
         }
     }
 }

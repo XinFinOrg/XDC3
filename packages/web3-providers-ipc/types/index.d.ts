@@ -20,6 +20,6 @@
  * @date 2018
  */
 
-import { IpcProviderBase } from 'web3-core-helpers';
+import { IpcProviderBase } from 'xdc3-rud-core-helpers';
 
 export class IpcProvider extends IpcProviderBase { }

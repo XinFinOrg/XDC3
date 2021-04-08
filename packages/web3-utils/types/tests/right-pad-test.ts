@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {rightPad} from 'web3-utils';
+import {rightPad} from 'xdc3-rud-utils';
 
 const bigNumber = new BN(3);
 

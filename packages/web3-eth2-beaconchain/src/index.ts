@@ -1,4 +1,4 @@
-import { ETH2Core, BaseAPISchema, ETH2BaseOpts } from 'web3-eth2-core'
+import { ETH2Core, BaseAPISchema, ETH2BaseOpts } from 'xdc3-rud-eth2-core'
 import { DefaultSchema } from './schema'
 
 import { ETH2BeaconChain as IETH2BeaconChain } from '../types'

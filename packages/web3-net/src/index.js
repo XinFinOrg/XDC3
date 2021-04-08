@@ -22,9 +22,9 @@
 
 "use strict";
 
-var core = require('xftest3-core');
-var Method = require('xftest3-core-method');
-var utils = require('xftest3-utils');
+var core = require('xdc3-rud-core');
+var Method = require('xdc3-rud-core-method');
+var utils = require('xdc3-rud-utils');
 
 
 var Net = function () {

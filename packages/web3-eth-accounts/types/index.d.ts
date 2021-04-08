@@ -17,9 +17,9 @@
  * @date 2018
  */
 
-import { AccountsBase, SignedTransaction, WalletBase } from 'web3-core';
+import { AccountsBase, SignedTransaction, WalletBase } from 'xdc3-rud-core';
 
-export {SignedTransaction} from 'web3-core';
+export {SignedTransaction} from 'xdc3-rud-core';
 
 export class Accounts extends AccountsBase {}
 

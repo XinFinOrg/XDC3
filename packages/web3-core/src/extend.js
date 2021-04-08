@@ -23,9 +23,9 @@
 "use strict";
 
 
-var formatters = require('xftest3-core-helpers').formatters;
-var Method = require('xftest3-core-method');
-var utils = require('xftest3-utils');
+var formatters = require('xdc3-rud-core-helpers').formatters;
+var Method = require('xdc3-rud-core-method');
+var utils = require('xdc3-rud-utils');
 
 
 var extend = function (pckg) {

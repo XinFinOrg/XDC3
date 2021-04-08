@@ -17,7 +17,7 @@
  * @date 2018
  */
 
-import { Network } from 'web3-net';
+import { Network } from 'xdc3-rud-net';
 
 // $ExpectType Network
 const network_empty = new Network();
