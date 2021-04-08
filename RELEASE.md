@@ -117,7 +117,7 @@ The following describes the steps required to release a new version of `web3.js`
     1.  (_Note:_ There is a delay on npm between different regions, so all may not see the release immediately.)
     1.  Twitter
     1.  Gitter
-    1.  Ethereum JavaScript Community (EJC) Discord
+    1.  XinFin JavaScript Community (EJC) Discord
     1.  Reddit
     1.  Depending on release's significance to certain projects, write to:
         1.  Fabio from 0x ([@fabioberger](https://github.com/fabioberger))

@@ -2,7 +2,7 @@
   <img src="assets/logo/web3js.jpg" width="200" alt="web3.js" />
 </p>
 
-# web3.js - Ethereum JavaScript API
+# web3.js - XinFin JavaScript API
 
 [![Gitter][gitter-image]][gitter-url] [![StackExchange][stackexchange-image]][stackexchange-url] [![NPM Package Version][npm-image-version]][npm-url] [![NPM Package Downloads][npm-image-downloads]][npm-url] [![Build Status][actions-image]][actions-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Lerna][lerna-image]][lerna-url] [![Netlify Status][netlify-image]][netlify-url]
 
