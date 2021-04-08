@@ -1,8 +1,8 @@
-# web3-eth-contract
+# xdc3-eth-contract
 
 [![NPM Package][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
-This is a sub-package of [web3.js][repo].
+This is a sub-package of [xdc3][repo].
 
 This is the contract package used in the `web3-eth` package.
 
@@ -13,13 +13,13 @@ Please read the [documentation][docs] for more.
 ### Node.js
 
 ```bash
-npm install web3-eth-contract
+npm install xdc3-eth-contract
 ```
 
 ## Usage
 
 ```js
-const Web3EthContract = require('web3-eth-contract');
+const Web3EthContract = require('xdc3-eth-contract');
 
 // Set provider for all later instances to use
 Web3EthContract.setProvider('ws://localhost:8546');

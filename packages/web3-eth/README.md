@@ -1,10 +1,10 @@
-# web3-eth
+# xdc3-eth
 
 [![NPM Package][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
-This is a sub-package of [web3.js][repo].
+This is a sub-package of [xdc3][repo].
 
-This Eth package is used within some [web3.js][repo] packages.
+This Eth package is used within some [xdc3][repo] packages.
 
 Please read the [documentation][docs] for more.
 
@@ -13,13 +13,13 @@ Please read the [documentation][docs] for more.
 ### Node.js
 
 ```bash
-npm install web3-eth
+npm install xdc3-eth
 ```
 
 ## Usage
 
 ```js
-const Web3Eth = require('web3-eth');
+const Web3Eth = require('xdc3-eth');
 
 const eth = new Web3Eth('ws://localhost:8546');
 ```

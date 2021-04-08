@@ -1,10 +1,10 @@
-# web3-core-subscriptions
+# xdc3-core-subscriptions
 
 [![NPM Package][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url]tus][deps-image]][deps-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
-This is a sub-package of [web3.js][repo]
+This is a sub-package of [xdc3][repo]
 
-This subscriptions package is used within some [web3.js][repo] packages.
+This subscriptions package is used within some [xdc3][repo] packages.
 
 Please read the [documentation][docs] for more.
 
@@ -13,13 +13,13 @@ Please read the [documentation][docs] for more.
 ### Node.js
 
 ```bash
-npm install web3-core-subscriptions
+npm install xdc3-core-subscriptions
 ```
 
 ## Usage
 
 ```js
-const Web3Subscriptions = require('web3-core-subscriptions');
+const Web3Subscriptions = require('xdc3-core-subscriptions');
 
 const sub = new Web3Subscriptions({
     name: 'subscribe',

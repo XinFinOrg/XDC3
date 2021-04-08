@@ -1,8 +1,8 @@
-# web3-eth-accounts
+# xdc3-eth-accounts
 
 [![NPM Package][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
-This is a sub-package of [web3.js][repo].
+This is a sub-package of [xdc3][repo].
 
 This is the accounts package used in the `web3-eth` package.
 
@@ -13,13 +13,13 @@ Please read the [documentation][docs] for more.
 ### Node.js
 
 ```bash
-npm install web3-eth-accounts
+npm install xdc3-eth-accounts
 ```
 
 ## Usage
 
 ```js
-const Web3EthAccounts = require('web3-eth-accounts');
+const Web3EthAccounts = require('xdc3-eth-accounts');
 
 const account = new Web3EthAccounts('ws://localhost:8546');
 account.create();

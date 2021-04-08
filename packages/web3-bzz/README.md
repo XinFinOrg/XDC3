@@ -1,8 +1,8 @@
-# web3-bzz
+# xdc3-bzz
 
 [![NPM Package][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
-This is a sub-package of [web3.js][repo].
+This is a sub-package of [xdc3][repo].
 
 This is the swarm package.
 
@@ -13,13 +13,13 @@ Please read the [documentation][docs] for more.
 ### Node.js
 
 ```bash
-npm install web3-bzz
+npm install xdc3-bzz
 ```
 
 ## Usage
 
 ```js
-const Web3Bzz = require('web3-bzz');
+const Web3Bzz = require('xdc3-bzz');
 
 const bzz = new Web3Bzz('http://swarm-gateways.net');
 ```

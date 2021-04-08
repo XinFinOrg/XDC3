@@ -1,8 +1,8 @@
-# web3-eth-personal
+# xdc3-eth-personal
 
 [![NPM Package][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
-This is a sub-package of [web3.js][repo].
+This is a sub-package of [xdc3][repo].
 
 This is the personal package used in the `web3-eth` package.
 
@@ -13,13 +13,13 @@ Please read the [documentation][docs] for more.
 ### Node.js
 
 ```bash
-npm install web3-eth-personal
+npm install xdc3-eth-personal
 ```
 
 ## Usage
 
 ```js
-const Web3EthPersonal = require('web3-eth-personal');
+const Web3EthPersonal = require('xdc3-eth-personal');
 
 const personal = new Web3EthPersonal('ws://localhost:8546');
 ```

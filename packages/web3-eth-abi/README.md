@@ -1,8 +1,8 @@
-# web3-eth-abi
+# xdc3-eth-abi
 
 [![NPM Package][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
-This is a sub-package of [web3.js][repo].
+This is a sub-package of [xdc3][repo].
 
 This is the abi package used in the `web3-eth` package.
 
@@ -13,13 +13,13 @@ Please read the [documentation][docs] for more.
 ### Node.js
 
 ```bash
-npm install web3-eth-abi
+npm install xdc3-eth-abi
 ```
 
 ## Usage
 
 ```js
-const Web3EthAbi = require('web3-eth-abi');
+const Web3EthAbi = require('xdc3-eth-abi');
 
 Web3EthAbi.encodeFunctionSignature('myMethod(uint256,string)');
 > '0x24ee0097'

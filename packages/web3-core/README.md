@@ -1,10 +1,10 @@
-# web3-core
+# xdc3-core
 
 [![NPM Package][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
-This is a sub-package of [web3.js][repo].
+This is a sub-package of [xdc3][repo].
 
-The core package contains core functions for [web3.js][repo] packages.
+The core package contains core functions for [xdc3][repo] packages.
 
 Please read the [documentation][docs] for more.
 
@@ -13,13 +13,13 @@ Please read the [documentation][docs] for more.
 ### Node.js
 
 ```bash
-npm install web3-core
+npm install xdc3-core
 ```
 
 ## Usage
 
 ```js
-const core = require('web3-core');
+const core = require('xdc3-core');
 
 const CoolLib = function CoolLib() {
     // sets _requestmanager and adds basic functions

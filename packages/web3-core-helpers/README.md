@@ -1,8 +1,8 @@
-# web3-core-helpers
+# xdc3-core-helpers
 
 [![NPM Package][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
-This is a sub-package of [web3.js][repo] with useful helper functions.
+This is a sub-package of [xdc3][repo] with useful helper functions.
 
 Please read the [documentation][docs] for more.
 
@@ -11,13 +11,13 @@ Please read the [documentation][docs] for more.
 ### Node.js
 
 ```bash
-npm install web3-core-helpers
+npm install xdc3-core-helpers
 ```
 
 ## Usage
 
 ```js
-const helpers = require('web3-core-helpers');
+const helpers = require('xdc3-core-helpers');
 
 helpers.formatters;
 helpers.errors;

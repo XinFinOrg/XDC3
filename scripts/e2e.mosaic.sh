@@ -10,7 +10,7 @@
 # Exit immediately on error
 set -o errexit
 
-# To mimic `npm install web3` correctly, this test does not install Web3's dev deps.
+# To mimic `npm install xdc3` correctly, this test does not install Web3's dev deps.
 # However, we need the npm package `semver` to coerce yarn resolutions correctly.
 # It must be installed as a dev dep or Node complains. We also need web3's package.json
 # to resolve the current version + patch increment. So some file renaming is necessary here...

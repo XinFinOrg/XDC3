@@ -2,7 +2,7 @@
   <img src="assets/logo/web3js.jpg" width="200" alt="web3.js" />
 </p>
 
-# web3.js - XinFin JavaScript API
+# xdc3.js - XinFin JavaScript API
 
 [![Gitter][gitter-image]][gitter-url] [![StackExchange][stackexchange-image]][stackexchange-url] [![NPM Package Version][npm-image-version]][npm-url] [![NPM Package Downloads][npm-image-downloads]][npm-url] [![Build Status][actions-image]][actions-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Lerna][lerna-image]][lerna-url] [![Netlify Status][netlify-image]][netlify-url]
 
@@ -18,7 +18,7 @@ Please read the [documentation][docs] for more.
 ### Node
 
 ```bash
-npm install web3
+npm install xdc3
 ```
 
 ### Yarn
@@ -30,7 +30,7 @@ yarn add web3
 ### In the Browser
 
 Use the prebuilt `dist/web3.min.js`, or
-build using the [web3.js][repo] repository:
+build using the [xdc3][repo] repository:
 
 ```bash
 npm run build
@@ -55,7 +55,7 @@ UNPKG:
 
 ```js
 // In Node.js
-const Web3 = require('web3');
+const Web3 = require('xdc3');
 
 let web3 = new Web3('ws://localhost:8546');
 console.log(web3);
@@ -103,7 +103,7 @@ If you are using the types in a `commonjs` module, like in a Node app, you just 
 
 ## Trouble shooting and known issues.
 
-### Web3 and Angular
+### xdc3 and Angular
 If you are using Ionic/Angular at a version >5 you may run into a build error in which modules `crypto` and `stream` are `undefined`
 
 a work around for this is to go into your node-modules and at `/angular-cli-files/models/webpack-configs/browser.js` change  the `node: false` to `node: {crypto: true, stream: true}` as mentioned [here](https://github.com/XinFinOrg/XDC3/issues/2260#issuecomment-458519127)

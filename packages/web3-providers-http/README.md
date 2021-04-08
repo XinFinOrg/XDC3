@@ -1,8 +1,8 @@
-# web3-providers-http
+# xdc3-providers-http
 
 [![NPM Package][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
-This is a HTTP provider sub-package for [web3.js][repo].
+This is a HTTP provider sub-package for [xdc3][repo].
 
 Please read the [documentation][docs] for more.
 
@@ -11,14 +11,14 @@ Please read the [documentation][docs] for more.
 ### Node.js
 
 ```bash
-npm install web3-providers-http
+npm install xdc3-providers-http
 ```
 
 ## Usage
 
 ```js
 const http = require('http');
-const Web3HttpProvider = require('web3-providers-http');
+const Web3HttpProvider = require('xdc3-providers-http');
 
 const options = {
     keepAlive: true,

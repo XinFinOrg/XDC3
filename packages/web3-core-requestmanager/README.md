@@ -1,10 +1,10 @@
-# web3-core-requestmanager
+# xdc3-core-requestmanager
 
 [![NPM Package][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
-This is a sub-package of [web3.js][repo].
+This is a sub-package of [xdc3][repo].
 
-This requestmanager package is used by most [web3.js][repo] packages.
+This requestmanager package is used by most [xdc3][repo] packages.
 
 Please read the [documentation][docs] for more.
 
@@ -13,14 +13,14 @@ Please read the [documentation][docs] for more.
 ### Node.js
 
 ```bash
-npm install web3-core-requestmanager
+npm install xdc3-core-requestmanager
 ```
 
 ## Usage
 
 ```js
-const Web3WsProvider = require('web3-providers-ws');
-const Web3RequestManager = require('web3-core-requestmanager');
+const Web3WsProvider = require('xdc3-providers-ws');
+const Web3RequestManager = require('xdc3-core-requestmanager');
 
 const requestManager = new Web3RequestManager(new Web3WsProvider('ws://localhost:8546'));
 ```

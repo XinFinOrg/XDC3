@@ -1,4 +1,4 @@
-# web3.js Release Guidelines
+# xdc3.js Release Guidelines
 
 ## Version Number Definition
 
@@ -66,7 +66,7 @@ Because breaking changes are always happening during the development of a projec
 2.  Deprecated functionalities should be marked in the developer documentation, function documentation, and the related types as deprecated.
 3.  A deprecated functionality stays deprecated for the next `X (TBD)` increases of the minor version.
 
-# web3.js Release Process
+# xdc3.js Release Process
 
 The following describes the steps required to release a new version of `web3.js`. It is followed to adhere to community standards and expectations.
 
