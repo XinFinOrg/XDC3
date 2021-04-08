@@ -1,6 +1,6 @@
 {
     "name": "xdc3-eth-abi",
-    "version": "1.3.13406",
+    "version": "1.3.13407",
     "description": "Web3 module encode and decode EVM in/output.",
     "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/web3-eth-abi",
     "license": "LGPL-3.0",
@@ -16,7 +16,7 @@
     "dependencies": {
         "@ethersproject/abi": "5.0.7",
         "underscore": "1.9.1",
-        "xdc3-utils": "1.3.13406"
+        "xdc3-utils": "1.3.13407"
     },
     "devDependencies": {
         "dtslint": "^3.4.1",
