@@ -18,7 +18,7 @@ npm install web3-providers-http
 
 ```js
 const http = require('http');
-const Web3HttpProvider = require('xftest3-providers-http');
+const Web3HttpProvider = require('xdc3-providers-http');
 
 const options = {
     keepAlive: true,

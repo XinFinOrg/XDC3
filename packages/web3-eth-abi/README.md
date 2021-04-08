@@ -19,7 +19,7 @@ npm install web3-eth-abi
 ## Usage
 
 ```js
-const Web3EthAbi = require('xftest3-eth-abi');
+const Web3EthAbi = require('xdc3-eth-abi');
 
 Web3EthAbi.encodeFunctionSignature('myMethod(uint256,string)');
 > '0x24ee0097'

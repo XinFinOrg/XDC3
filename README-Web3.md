@@ -55,7 +55,7 @@ UNPKG:
 
 ```js
 // In Node.js
-const Web3 = require('xftest3');
+const Web3 = require('xdc3');
 
 let web3 = new Web3('ws://localhost:8546');
 console.log(web3);

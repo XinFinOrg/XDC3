@@ -19,7 +19,7 @@ npm install web3-eth-personal
 ## Usage
 
 ```js
-const Web3EthPersonal = require('xftest3-eth-personal');
+const Web3EthPersonal = require('xdc3-eth-personal');
 
 const personal = new Web3EthPersonal('ws://localhost:8546');
 ```

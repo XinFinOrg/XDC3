@@ -21,7 +21,7 @@
     "scripts": {
         "compile": "tsc -b tsconfig.json",
         "dtslint": "dtslint --localTs ../../node_modules/typescript/lib types",
-        "postinstall": "echo \"WARNING: the xftest3-shh and xftest3-bzz api will be deprecated in the next version\""
+        "postinstall": "echo \"WARNING: the xdc3-shh and xdc3-bzz api will be deprecated in the next version\""
     },
     "authors": [
         {
@@ -63,5 +63,5 @@
         "dtslint": "^3.4.1",
         "typescript": "^3.9.5"
     },
-    "gitHead": "10222b17d48425f5f7983c7b836d94e69ba20a6e"
+    "gitHead": "133a4266feb98a9f1eaafca05bf5bb56fb2a9f94"
 }

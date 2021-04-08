@@ -19,7 +19,7 @@ npm install web3-core
 ## Usage
 
 ```js
-const core = require('xftest3-core');
+const core = require('xdc3-core');
 
 const CoolLib = function CoolLib() {
     // sets _requestmanager and adds basic functions

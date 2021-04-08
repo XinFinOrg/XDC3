@@ -10,7 +10,7 @@ The ``web3-shh`` package allows you to interact with the whisper protocol for br
 
 .. code-block:: javascript
 
-    var Shh = require('xftest3-shh');
+    var Shh = require('xdc3-shh');
 
     // "Shh.providers.givenProvider" will be set if in an Ethereum supported browser.
     var shh = new Shh(Shh.givenProvider || 'ws://some.local-or-remote.node:8546');
@@ -18,7 +18,7 @@ The ``web3-shh`` package allows you to interact with the whisper protocol for br
 
     // or using the web3 umbrella package
 
-    var Web3 = require('xftest3');
+    var Web3 = require('xdc3');
     var web3 = new Web3(Web3.givenProvider || 'ws://some.local-or-remote.node:8546');
 
     // -> web3.shh

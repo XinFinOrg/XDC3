@@ -19,8 +19,8 @@ npm install web3-core-requestmanager
 ## Usage
 
 ```js
-const Web3WsProvider = require('xftest3-providers-ws');
-const Web3RequestManager = require('xftest3-core-requestmanager');
+const Web3WsProvider = require('xdc3-providers-ws');
+const Web3RequestManager = require('xdc3-core-requestmanager');
 
 const requestManager = new Web3RequestManager(new Web3WsProvider('ws://localhost:8546'));
 ```

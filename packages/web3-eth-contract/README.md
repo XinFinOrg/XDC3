@@ -19,7 +19,7 @@ npm install web3-eth-contract
 ## Usage
 
 ```js
-const Web3EthContract = require('xftest3-eth-contract');
+const Web3EthContract = require('xdc3-eth-contract');
 
 // Set provider for all later instances to use
 Web3EthContract.setProvider('ws://localhost:8546');

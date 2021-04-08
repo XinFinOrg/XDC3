@@ -19,7 +19,7 @@ npm install web3-utils
 ## Usage
 
 ```js
-const Web3Utils = require('xftest3-utils');
+const Web3Utils = require('xdc3-utils');
 console.log(Web3Utils);
 {
     sha3: function(){},

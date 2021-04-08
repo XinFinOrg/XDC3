@@ -35,7 +35,7 @@ If this property is ``null`` you should connect to a remote/local node.
 
 .. code-block:: javascript
 
-    // In Node.js use: const Web3 = require('xftest3');
+    // In Node.js use: const Web3 = require('xdc3');
 
     let web3 = new Web3(Web3.givenProvider || "ws://localhost:8545");
 

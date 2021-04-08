@@ -17,7 +17,7 @@ npm install web3-providers-ws
 ## Usage
 
 ```js
-const Web3WsProvider = require('xftest3-providers-ws');
+const Web3WsProvider = require('xdc3-providers-ws');
 
 const options = {
     timeout: 30000, // ms

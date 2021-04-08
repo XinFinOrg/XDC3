@@ -2,7 +2,7 @@
     "name": "xdc3-core-helpers",
     "version": "1.2.135",
     "description": "Web3 core tools helper for sub packages. This is an internal package.",
-    "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/xftest3-core-helpers",
+    "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/xdc3-core-helpers",
     "license": "LGPL-3.0",
     "engines": {
         "node": ">=8.0.0"
@@ -23,5 +23,5 @@
         "dtslint": "^3.4.1",
         "typescript": "^3.9.5"
     },
-    "gitHead": "10222b17d48425f5f7983c7b836d94e69ba20a6e"
+    "gitHead": "133a4266feb98a9f1eaafca05bf5bb56fb2a9f94"
 }

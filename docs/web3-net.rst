@@ -10,7 +10,7 @@ The ``web3-net`` package allows you to interact with an Ethereum node's network 
 
 .. code-block:: javascript
 
-    var Net = require('xftest3-net');
+    var Net = require('xdc3-net');
 
     // "Personal.providers.givenProvider" will be set if in an Ethereum supported browser.
     var net = new Net(Net.givenProvider || 'ws://some.local-or-remote.node:8546');
@@ -18,7 +18,7 @@ The ``web3-net`` package allows you to interact with an Ethereum node's network 
 
     // or using the web3 umbrella package
 
-    var Web3 = require('xftest3');
+    var Web3 = require('xdc3');
     var web3 = new Web3(Web3.givenProvider || 'ws://some.local-or-remote.node:8546');
 
     // -> web3.eth.net

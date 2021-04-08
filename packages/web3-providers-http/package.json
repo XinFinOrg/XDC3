@@ -2,7 +2,7 @@
     "name": "xdc3-providers-http",
     "version": "1.2.135",
     "description": "Module to handle web3 RPC connections over HTTP.",
-    "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/xftest3-providers-http",
+    "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/xdc3-providers-http",
     "license": "LGPL-3.0",
     "engines": {
         "node": ">=8.0.0"
@@ -21,5 +21,5 @@
         "dtslint": "^3.4.1",
         "typescript": "^3.9.5"
     },
-    "gitHead": "10222b17d48425f5f7983c7b836d94e69ba20a6e"
+    "gitHead": "133a4266feb98a9f1eaafca05bf5bb56fb2a9f94"
 }
