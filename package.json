@@ -2,7 +2,7 @@
     "name": "xdc3",
     "private": true,
     "version": "1.3.4",
-    "description": "XinFin JavaScript API wrapper repository",
+    "description": "Ethereum JavaScript API wrapper repository",
     "license": "LGPL-3.0",
     "engines": {
         "node": ">=8.0.0"
@@ -19,7 +19,7 @@
         "version": "npm run build",
         "postinstall": "npm run bootstrap",
         "build": "npm run bootstrap && lerna run compile && webpack && cp -r ./dist ./packages/web3",
-        "publish": "lerna publish --no-git-reset",
+        "publish": "lerna publish",
         "bootstrap": "lerna bootstrap --hoist",
         "lint": "jshint *.js packages",
         "test": "mocha -R spec --require ts-node/register --grep E2E --invert",
@@ -49,14 +49,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/XinFinOrg/XDC3.git"
+        "url": "https://github.com/ethereum/web3.js.git"
     },
-    "homepage": "https://github.com/XinFinOrg/XDC3",
+    "homepage": "https://github.com/ethereum/web3.js",
     "bugs": {
-        "url": "https://github.com/XinFinOrg/XDC3/issues"
+        "url": "https://github.com/ethereum/web3.js/issues"
     },
     "keywords": [
-        "XinFIn",
+        "Ethereum",
         "JavaScript",
         "API"
     ],
