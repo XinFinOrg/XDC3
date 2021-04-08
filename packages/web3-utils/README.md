@@ -1,8 +1,6 @@
-# web3-utils
+# xdc3-utils
 
-[![NPM Package][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
-This is a sub-package of [web3.js][repo].
 
 This contains useful utility functions for Dapp developers.
 
@@ -13,7 +11,7 @@ Please read the [documentation][docs] for more.
 ### Node.js
 
 ```bash
-npm install web3-utils
+npm install xdc3-utils
 ```
 
 ## Usage

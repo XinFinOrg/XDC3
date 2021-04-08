@@ -1,10 +1,8 @@
-# web3-net
+# xdc3-net
 
-[![NPM Package][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
-This is a sub-package of [web3.js][repo].
 
-This is the net package used in other [web3.js][repo] packages.
+This is the net package used in other [xdc3][repo] packages.
 
 Please read the [documentation][docs] for more.
 
@@ -13,7 +11,7 @@ Please read the [documentation][docs] for more.
 ### Node.js
 
 ```bash
-npm install web3-net
+npm install xdc3-net
 ```
 
 ## Usage

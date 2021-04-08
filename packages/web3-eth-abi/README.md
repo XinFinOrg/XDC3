@@ -1,10 +1,8 @@
-# web3-eth-abi
+# xdc3-eth-abi
 
-[![NPM Package][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
-This is a sub-package of [web3.js][repo].
 
-This is the abi package used in the `web3-eth` package.
+This is the abi package used in the `xdc3-eth` package.
 
 Please read the [documentation][docs] for more.
 
@@ -13,7 +11,7 @@ Please read the [documentation][docs] for more.
 ### Node.js
 
 ```bash
-npm install web3-eth-abi
+npm install xdc3-eth-abi
 ```
 
 ## Usage

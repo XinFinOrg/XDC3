@@ -1,8 +1,8 @@
-# web3-shh
+# xdc3-shh
 
 [![NPM Package][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
-This is a sub-package of [web3.js][repo]
+This is a sub-package of [xdc3][repo]
 
 This is the whisper v5 package.
 
@@ -13,7 +13,7 @@ Please read the [documentation][docs] for more.
 ### Node.js
 
 ```bash
-npm install web3-shh
+npm install xdc3-shh
 ```
 
 ## Usage

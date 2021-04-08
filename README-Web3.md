@@ -18,7 +18,7 @@ Please read the [documentation][docs] for more.
 ### Node
 
 ```bash
-npm install web3
+npm install xdc3
 ```
 
 ### Yarn
@@ -30,7 +30,7 @@ yarn add web3
 ### In the Browser
 
 Use the prebuilt `dist/web3.min.js`, or
-build using the [web3.js][repo] repository:
+build using the [xdc3][repo] repository:
 
 ```bash
 npm run build

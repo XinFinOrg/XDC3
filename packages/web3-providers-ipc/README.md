@@ -1,8 +1,8 @@
-# web3-providers-ipc
+# xdc3-providers-ipc
 
 [![NPM Package][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
-This is an IPC provider sub-package for [web3.js][repo].
+This is an IPC provider sub-package for [xdc3][repo].
 
 Please read the [documentation][docs] for more.
 
@@ -11,7 +11,7 @@ Please read the [documentation][docs] for more.
 ### Node.js
 
 ```bash
-npm install web3-providers-ipc
+npm install xdc3-providers-ipc
 ```
 
 ## Usage

@@ -1,8 +1,6 @@
-# web3-core-promievent
+# xdc3-core-promievent
 
-[![NPM Package][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
-This is a sub-package of [web3.js][repo].
 
 This is the PromiEvent package used to return a EventEmitter mixed with a Promise to allow multiple final states as well as chaining.
 
@@ -13,7 +11,7 @@ Please read the [documentation][docs] for more.
 ### Node.js
 
 ```bash
-npm install web3-core-promievent
+npm install xdc3-core-promievent
 ```
 
 ## Usage
