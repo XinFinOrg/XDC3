@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {hexToUtf8} from 'web3-utils';
+import {hexToUtf8} from 'xdc3-rud-utils';
 
 // $ExpectType string
 hexToUtf8('0x49206861766520313030e282ac');

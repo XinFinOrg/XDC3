@@ -18,8 +18,8 @@
  */
 
 import * as net from 'net';
-import { BatchRequest, provider, Providers, Extension } from 'web3-core';
-import { Network } from 'web3-net';
+import { BatchRequest, provider, Providers, Extension } from 'xdc3-rud-core';
+import { Network } from 'xdc3-rud-net';
 
 export class Shh {
     constructor();

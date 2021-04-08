@@ -11,7 +11,7 @@
         "allowSyntheticDefaultImports": false,
         "baseUrl": ".",
         "paths": {
-            "web3-bzz": ["."]
+            "xdc3-rud-bzz": ["."]
         }
     }
 }

@@ -1,6 +1,6 @@
 {
-    "name": "xftest3-eth-ens",
-    "version": "1.3.7-alpha.0",
+    "name": "xdc3-rud-eth-ens",
+    "version": "1.3.8",
     "description": "ENS support for web3.",
     "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/xftest3-eth-ens",
     "license": "LGPL-3.0",
@@ -17,12 +17,13 @@
         "content-hash": "^2.5.2",
         "eth-ens-namehash": "2.0.8",
         "underscore": "1.9.1",
-        "xftest3-core": "1.3.7-alpha.0",
-        "xftest3-core-helpers": "1.3.7-alpha.0",
-        "xftest3-core-promievent": "1.3.7-alpha.0",
-        "xftest3-eth-abi": "1.3.7-alpha.0",
-        "xftest3-eth-contract": "1.3.7-alpha.0",
-        "xftest3-utils": "1.3.7-alpha.0"
+        "xdc3-rud-core": "1.3.7",
+        "xdc3-rud-core-helpers": "1.3.7",
+        "xdc3-rud-core-promievent": "1.3.5",
+        "xdc3-rud-eth": "1.3.8",
+        "xdc3-rud-eth-abi": "1.3.8",
+        "xdc3-rud-eth-contract": "1.3.8",
+        "xdc3-rud-utils": "1.3.7"
     },
     "devDependencies": {
         "dtslint": "^3.4.1",

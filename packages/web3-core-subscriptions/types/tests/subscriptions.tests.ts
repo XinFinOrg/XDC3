@@ -20,7 +20,7 @@
  * @date 2019
  */
 
-import {Subscriptions, Subscription} from 'web3-core-subscriptions';
+import {Subscriptions, Subscription} from 'xdc3-rud-core-subscriptions';
 
 const subscriptions = new Subscriptions({
     name: '',

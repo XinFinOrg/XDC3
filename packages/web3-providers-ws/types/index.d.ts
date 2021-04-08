@@ -20,6 +20,6 @@
  * @date 2018
  */
 
-import { WebsocketProviderBase } from 'web3-core-helpers';
+import { WebsocketProviderBase } from 'xdc3-rud-core-helpers';
 
 export class WebsocketProvider extends WebsocketProviderBase { }

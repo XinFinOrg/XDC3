@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {keccak256} from 'web3-utils';
+import {keccak256} from 'xdc3-rud-utils';
 
 // $ExpectType string
 keccak256('234');

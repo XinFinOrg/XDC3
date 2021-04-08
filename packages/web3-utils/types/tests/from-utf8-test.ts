@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {fromUtf8} from 'web3-utils';
+import {fromUtf8} from 'xdc3-rud-utils';
 
 // $ExpectType string
 fromUtf8('I have 100£');

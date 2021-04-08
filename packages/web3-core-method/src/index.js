@@ -24,11 +24,11 @@
 'use strict';
 
 var _ = require('underscore');
-var errors = require('xftest3-core-helpers').errors;
-var formatters = require('xftest3-core-helpers').formatters;
-var utils = require('xftest3-utils');
-var promiEvent = require('xftest3-core-promievent');
-var Subscriptions = require('xftest3-core-subscriptions').subscriptions;
+var errors = require('xdc3-rud-core-helpers').errors;
+var formatters = require('xdc3-rud-core-helpers').formatters;
+var utils = require('xdc3-rud-utils');
+var promiEvent = require('xdc3-rud-core-promievent');
+var Subscriptions = require('xdc3-rud-core-subscriptions').subscriptions;
 
 var EthersTransactionUtils = require('@ethersproject/transactions');
 

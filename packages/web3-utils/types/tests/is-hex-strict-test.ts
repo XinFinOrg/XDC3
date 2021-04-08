@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {isHexStrict} from 'web3-utils';
+import {isHexStrict} from 'xdc3-rud-utils';
 
 // $ExpectType boolean
 isHexStrict('0xc1912');

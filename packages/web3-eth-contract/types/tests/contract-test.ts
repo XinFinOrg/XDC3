@@ -18,7 +18,7 @@
  * @date 2018
  */
 
-import { Contract } from 'web3-eth-contract';
+import { Contract } from 'xdc3-rud-eth-contract';
 
 const contract = new Contract([]);
 

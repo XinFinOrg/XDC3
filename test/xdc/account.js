@@ -11,6 +11,7 @@ describe("xdc3.eth.acconuts", function () {
             );
 
             const account = xdc3.eth.accounts.create();
+            console.log(account,"account")
             if (Utils.isXdcAddress(account.address)){ resolve();}
             else{reject();}
         });

@@ -29,27 +29,27 @@ const targetPackage = require(targetPackagePath);
 const version = semver.inc(web3Package.version, 'minor');
 
 const web3Modules = [
-  "web3",
-  "web3-bzz",
-  "web3-core-helpers",
-  "web3-core-method",
-  "web3-core-promievent",
-  "web3-core-requestmanager",
-  "web3-core-subscriptions",
-  "web3-core",
-  "web3-eth-abi",
-  "web3-eth-accounts",
-  "web3-eth-contract",
-  "web3-eth-ens",
-  "web3-eth-iban",
-  "web3-eth-personal",
-  "web3-eth",
-  "web3-net",
-  "web3-providers-http",
-  "web3-providers-ipc",
-  "web3-providers-ws",
-  "web3-shh",
-  "web3-utils"
+  "xdc3-rud",
+  "xdc3-rud-bzz",
+  "xdc3-rud-core-helpers",
+  "xdc3-rud-core-method",
+  "xdc3-rud-core-promievent",
+  "xdc3-rud-core-requestmanager",
+  "xdc3-rud-core-subscriptions",
+  "xdc3-rud-core",
+  "xdc3-rud-eth-abi",
+  "xdc3-rud-eth-accounts",
+  "xdc3-rud-eth-contract",
+  "xdc3-rud-eth-ens",
+  "xdc3-rud-eth-iban",
+  "xdc3-rud-eth-personal",
+  "xdc3-rud-eth",
+  "xdc3-rud-net",
+  "xdc3-rud-providers-http",
+  "xdc3-rud-providers-ipc",
+  "xdc3-rud-providers-ws",
+  "xdc3-rud-shh",
+  "xdc3-rud-utils"
 ];
 
 

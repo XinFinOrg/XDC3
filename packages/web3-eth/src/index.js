@@ -23,19 +23,19 @@
 "use strict";
 
 var _ = require('underscore');
-var core = require('xftest3-core');
-var helpers = require('xftest3-core-helpers');
-var Subscriptions = require('xftest3-core-subscriptions').subscriptions;
-var Method = require('xftest3-core-method');
-var utils = require('xftest3-utils');
-var Net = require('xftest3-net');
+var core = require('xdc3-rud-core');
+var helpers = require('xdc3-rud-core-helpers');
+var Subscriptions = require('xdc3-rud-core-subscriptions').subscriptions;
+var Method = require('xdc3-rud-core-method');
+var utils = require('xdc3-rud-utils');
+var Net = require('xdc3-rud-net');
 
-var ENS = require('xftest3-eth-ens');
-var Personal = require('xftest3-eth-personal');
-var BaseContract = require('xftest3-eth-contract');
-var Iban = require('xftest3-eth-iban');
-var Accounts = require('xftest3-eth-accounts');
-var abi = require('xftest3-eth-abi');
+var ENS = require('xdc3-rud-eth-ens');
+var Personal = require('xdc3-rud-eth-personal');
+var BaseContract = require('xdc3-rud-eth-contract');
+var Iban = require('xdc3-rud-eth-iban');
+var Accounts = require('xdc3-rud-eth-accounts');
+var abi = require('xdc3-rud-eth-abi');
 
 var getNetworkType = require('./getNetworkType.js');
 var formatter = helpers.formatters;

@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {testAddress} from 'web3-utils';
+import {testAddress} from 'xdc3-rud-utils';
 
 const bigNumber = new BN(3);
 

@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {fromWei} from 'web3-utils';
+import {fromWei} from 'xdc3-rud-utils';
 
 const bigNumber = new BN(3);
 

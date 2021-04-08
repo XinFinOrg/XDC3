@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {toHex} from 'web3-utils';
+import {toHex} from 'xdc3-rud-utils';
 
 // $ExpectType string
 toHex('234');

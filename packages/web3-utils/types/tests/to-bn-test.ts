@@ -20,7 +20,7 @@
  * @date 2018
  */
 
-import {toBN} from 'web3-utils';
+import {toBN} from 'xdc3-rud-utils';
 
 // $ExpectType BN
 toBN(4);

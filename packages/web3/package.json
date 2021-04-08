@@ -1,8 +1,8 @@
 {
-    "name": "xftest3",
-    "version": "1.3.7-alpha.0",
-    "description": "XinFin JavaScript API",
-    "repository": "https://github.com/XinFinOrg/XDC3",
+    "name": "xdc3-rud",
+    "version": "1.3.8",
+    "description": "Ethereum JavaScript API",
+    "repository": "https://github.com/ethereum/web3.js",
     "license": "LGPL-3.0",
     "engines": {
         "node": ">=8.0.0"
@@ -50,13 +50,13 @@
         }
     ],
     "dependencies": {
-        "xftest3-bzz": "1.3.7-alpha.0",
-        "xftest3-core": "1.3.7-alpha.0",
-        "xftest3-eth": "1.3.7-alpha.0",
-        "xftest3-eth-personal": "1.3.7-alpha.0",
-        "xftest3-net": "1.3.7-alpha.0",
-        "xftest3-shh": "1.3.7-alpha.0",
-        "xftest3-utils": "1.3.7-alpha.0"
+        "xdc3-rud-bzz": "1.3.7",
+        "xdc3-rud-core": "1.3.7",
+        "xdc3-rud-eth": "1.3.8",
+        "xdc3-rud-eth-personal": "1.3.7",
+        "xdc3-rud-net": "1.3.7",
+        "xdc3-rud-shh": "1.3.7",
+        "xdc3-rud-utils": "1.3.7"
     },
     "devDependencies": {
         "@types/node": "^12.12.6",

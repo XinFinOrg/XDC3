@@ -1,6 +1,6 @@
 {
-    "name": "xftest3-eth-personal",
-    "version": "1.3.7-alpha.0",
+    "name": "xdc3-rud-eth-personal",
+    "version": "1.3.7",
     "description": "Web3 module to interact with the Ethereum blockchain accounts stored in the node.",
     "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/xftest3-eth-personal",
     "license": "LGPL-3.0",
@@ -15,11 +15,11 @@
     "main": "lib/index.js",
     "dependencies": {
         "@types/node": "^12.12.6",
-        "xftest3-core": "1.3.7-alpha.0",
-        "xftest3-core-helpers": "1.3.7-alpha.0",
-        "xftest3-core-method": "1.3.7-alpha.0",
-        "xftest3-net": "1.3.7-alpha.0",
-        "xftest3-utils": "1.3.7-alpha.0"
+        "xdc3-rud-core": "1.3.7",
+        "xdc3-rud-core-helpers": "1.3.7",
+        "xdc3-rud-core-method": "1.3.7",
+        "xdc3-rud-net": "1.3.7",
+        "xdc3-rud-utils": "1.3.7"
     },
     "devDependencies": {
         "dtslint": "^3.4.1",

@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {asciiToHex} from 'web3-utils';
+import {asciiToHex} from 'xdc3-rud-utils';
 
 // $ExpectType string
 asciiToHex('I have 100!');

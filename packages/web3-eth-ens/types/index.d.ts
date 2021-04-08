@@ -17,10 +17,10 @@
  * @date 2018
  */
 
-import { PromiEvent, TransactionConfig, TransactionReceipt } from 'web3-core';
-import { TransactionRevertInstructionError } from 'web3-core-helpers';
-import { Eth } from 'web3-eth';
-import { Contract } from 'web3-eth-contract';
+import { PromiEvent, TransactionConfig, TransactionReceipt } from 'xdc3-rud-core';
+import { TransactionRevertInstructionError } from 'xdc3-rud-core-helpers';
+import { Eth } from 'xdc3-rud-eth';
+import { Contract } from 'xdc3-rud-eth-contract';
 
 export interface ContentHash {
     protocolType: 'ipfs' | 'bzz' | 'onion' | 'onion3' | null,

@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {getSignatureParameters} from 'web3-utils';
+import {getSignatureParameters} from 'xdc3-rud-utils';
 
 // $ExpectType { r: string; s: string; v: number; }
 getSignatureParameters(

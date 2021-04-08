@@ -21,7 +21,7 @@
  */
 
 import BN = require('bn.js');
-import {soliditySha3} from 'web3-utils';
+import {soliditySha3} from 'xdc3-rud-utils';
 
 // $ExpectType string | null
 soliditySha3('234564535', '0xfff23243', true, -10);

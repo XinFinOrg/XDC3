@@ -24,8 +24,8 @@
 "use strict";
 
 var _ = require('underscore');
-var utils = require('xftest3-utils');
-var Iban = require('xftest3-eth-iban');
+var utils = require('xdc3-rud-utils');
+var Iban = require('xdc3-rud-eth-iban');
 
 
 /**

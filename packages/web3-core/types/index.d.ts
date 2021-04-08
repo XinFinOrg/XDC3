@@ -27,8 +27,8 @@ import {
     WebsocketProviderOptions,
     JsonRpcPayload,
     JsonRpcResponse
-} from 'web3-core-helpers';
-import { Method } from 'web3-core-method';
+} from 'xdc3-rud-core-helpers';
+import { Method } from 'xdc3-rud-core-method';
 import BN = require('bn.js');
 import BigNumber from 'bignumber.js';
 
