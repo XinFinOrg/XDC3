@@ -16,7 +16,7 @@
     },
     "main": "lib/index.js",
     "dependencies": {
-        "xdc3-eth2-core": "1.3.13411"
+        "xdc3-eth2-core2": "1.3.13411"
     },
     "devDependencies": {
         "@babel/cli": "^7.12.10",
@@ -33,5 +33,5 @@
         "jest": "^26.4.2",
         "typescript": "^4.0.3"
     },
-    "gitHead": "7a9f7dc3f2e5bb2fe9b6bbc15bfa4f1bd711b9a4"
+    "gitHead": "b2ec95f49b972593d590226456041ae6efb33bd4"
 }
