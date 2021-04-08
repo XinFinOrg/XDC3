@@ -1,6 +1,6 @@
 {
     "name": "xdc3-providers-ipc",
-    "version": "1.3.13404",
+    "version": "1.3.13405",
     "description": "Module to handle web3 RPC connections over IPC sockets.",
     "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/web3-providers-ipc",
     "license": "LGPL-3.0",
@@ -16,7 +16,7 @@
     "dependencies": {
         "oboe": "2.1.5",
         "underscore": "1.9.1",
-        "xdc3-core-helpers": "1.3.13404"
+        "xdc3-core-helpers": "1.3.13405"
     },
     "devDependencies": {
         "@types/node": "^12.12.6",
