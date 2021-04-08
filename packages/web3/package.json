@@ -62,5 +62,6 @@
         "@types/node": "^12.12.6",
         "dtslint": "^3.4.1",
         "typescript": "^3.9.5"
-    }
+    },
+    "gitHead": "6e2efaef16956af8a5593bbaa502fb73a49aa076"
 }

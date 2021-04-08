@@ -13,5 +13,6 @@
     },
     "dependencies": {
         "eventemitter3": "4.0.4"
-    }
+    },
+    "gitHead": "6e2efaef16956af8a5593bbaa502fb73a49aa076"
 }
