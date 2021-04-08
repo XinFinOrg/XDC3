@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# web3.js documentation build configuration file, created by
+# xdc3 documentation build configuration file, created by
 # sphinx-quickstart on Fri Oct 14 15:04:49 2016.
 #
 # This file is execfile()d with the current directory set to its
