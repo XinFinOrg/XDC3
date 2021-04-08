@@ -1,8 +1,8 @@
 {
-    "name": "xdc3-eth2-core2",
-    "version": "1.3.13401",
+    "name": "xdc3-eth2-core",
+    "version": "1.3.7",
     "description": "Web3 ETH2 core tools for sub-packages. This is an internal package.",
-    "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/xdc3-eth2-core",
+    "repository": "https://github.com/ethereum/web3.js/tree/1.x/packages/web3-eth2-core",
     "license": "LGPL-3.0",
     "engines": {
         "node": ">=8.0.0"
@@ -29,6 +29,5 @@
         "jest": "^26.5.3",
         "ts-jest": "^26.4.4",
         "typescript": "^3.9.7"
-    },
-    "gitHead": "c361222cfd380037303e838efdeb1374d19dbccf"
+    }
 }

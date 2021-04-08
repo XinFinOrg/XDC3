@@ -1,8 +1,8 @@
-# xdc3-core-helpers
+# web3-core-helpers
 
 [![NPM Package][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
-This is a sub-package of [xdc3][repo] with useful helper functions.
+This is a sub-package of [web3.js][repo] with useful helper functions.
 
 Please read the [documentation][docs] for more.
 
@@ -11,13 +11,13 @@ Please read the [documentation][docs] for more.
 ### Node.js
 
 ```bash
-npm install xdc3-core-helpers
+npm install web3-core-helpers
 ```
 
 ## Usage
 
 ```js
-const helpers = require('xdc3-core-helpers');
+const helpers = require('web3-core-helpers');
 
 helpers.formatters;
 helpers.errors;
@@ -29,7 +29,7 @@ helpers.errors;
 All the TypeScript typings are placed in the `types` folder.
 
 [docs]: http://web3js.readthedocs.io/en/1.0/
-[repo]: https://github.com/XinFinOrg/XDC3
+[repo]: https://github.com/ethereum/web3.js
 [npm-image]: https://img.shields.io/npm/v/web3-core-helpers.svg
 [npm-url]: https://npmjs.org/package/web3-core-helpers
 [deps-image]: https://david-dm.org/ethereum/web3.js/1.x/status.svg?path=packages/web3-core-helpers

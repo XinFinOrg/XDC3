@@ -229,7 +229,7 @@ export interface Log {
     blockNumber: number;
 }
 
-// had to move `xdc3-net` due to other modules in `1.x` not referencing
+// had to move `web3-net` due to other modules in `1.x` not referencing
 
 export class NetworkBase {
     constructor();
@@ -386,7 +386,7 @@ export interface SignatureObject {
     v: string;
 }
 
-// put all the `xdc3-provider` typings in here so we can get to them everywhere as this module does not exist in 1.x
+// put all the `web3-provider` typings in here so we can get to them everywhere as this module does not exist in 1.x
 
 export class BatchRequest {
     constructor();

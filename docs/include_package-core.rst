@@ -34,7 +34,7 @@ Example: Local Geth Node
 
 .. code-block:: javascript
 
-    var Web3 = require('xdc3');
+    var Web3 = require('web3');
     var web3 = new Web3('http://localhost:8545');
     // or
     var web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
@@ -59,7 +59,7 @@ Example: Remote Node Provider
 .. code-block:: javascript
 
     // Using a remote node provider, like Alchemy (https://www.alchemyapi.io/supernode), is simple.
-    var Web3 = require('xdc3');
+    var Web3 = require('web3');
     var web3 = new Web3("https://eth-mainnet.alchemyapi.io/v2/your-api-key");
 
 
@@ -94,7 +94,7 @@ Example
 
 .. code-block:: javascript
 
-    var Web3 = require('xdc3');
+    var Web3 = require('web3');
     // use the given Provider, e.g in Mist, or instantiate a new websocket provider
     var web3 = new Web3(Web3.givenProvider || 'ws://remotenode.com:8546');
     // or
@@ -119,7 +119,7 @@ Configuration
     // Http
     // ====
 
-    var Web3HttpProvider = require('xdc3-providers-http');
+    var Web3HttpProvider = require('web3-providers-http');
 
     var options = {
         keepAlive: true,
@@ -146,7 +146,7 @@ Configuration
     // Websockets
     // ==========
 
-    var Web3WsProvider = require('xdc3-providers-ws');
+    var Web3WsProvider = require('web3-providers-ws');
 
     var options = {
         timeout: 30000, // ms
@@ -180,8 +180,8 @@ Configuration
 
 More information for the Http and Websocket provider modules can be found here:
 
-    - `HttpProvider <https://github.com/XinFinOrg/XDC3/tree/1.x/packages/web3-providers-http#usage>`_
-    - `WebsocketProvider <https://github.com/XinFinOrg/XDC3/tree/1.x/packages/web3-providers-ws#usage>`_
+    - `HttpProvider <https://github.com/ethereum/web3.js/tree/1.x/packages/web3-providers-http#usage>`_
+    - `WebsocketProvider <https://github.com/ethereum/web3.js/tree/1.x/packages/web3-providers-ws#usage>`_
 
 ------------------------------------------------------------------------------
 
@@ -303,7 +303,7 @@ extend
 
 Allows extending the web3 modules.
 
-.. note:: You also have ``*.extend.formatters`` as additional formatter functions to be used for input and output formatting. Please see the `source file <https://github.com/XinFinOrg/XDC3/blob/1.x/packages/web3-core-helpers/src/formatters.js>`_ for function details.
+.. note:: You also have ``*.extend.formatters`` as additional formatter functions to be used for input and output formatting. Please see the `source file <https://github.com/ethereum/web3.js/blob/1.x/packages/web3-core-helpers/src/formatters.js>`_ for function details.
 
 ----------
 Parameters

@@ -1,8 +1,8 @@
 {
     "name": "xdc3-eth-ens",
-    "version": "1.3.13401",
+    "version": "1.3.8",
     "description": "ENS support for web3.",
-    "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/xdc3-eth-ens",
+    "repository": "https://github.com/ethereum/web3.js/tree/1.x/packages/web3-eth-ens",
     "license": "LGPL-3.0",
     "engines": {
         "node": ">=8.0.0"
@@ -17,17 +17,16 @@
         "content-hash": "^2.5.2",
         "eth-ens-namehash": "2.0.8",
         "underscore": "1.9.1",
-        "xdc3-core": "1.3.13401",
-        "xdc3-core-helpers": "1.3.13401",
-        "xdc3-core-promievent": "1.3.13401",
-        "xdc3-eth": "1.3.13401",
-        "xdc3-eth-abi": "1.3.13401",
-        "xdc3-eth-contract": "1.3.13401",
-        "xdc3-utils": "1.3.13401"
+        "xdc3-core": "1.3.7",
+        "xdc3-core-helpers": "1.3.7",
+        "xdc3-core-promievent": "1.3.5",
+        "xdc3-eth": "1.3.8",
+        "xdc3-eth-abi": "1.3.8",
+        "xdc3-eth-contract": "1.3.8",
+        "xdc3-utils": "1.3.7"
     },
     "devDependencies": {
         "dtslint": "^3.4.1",
         "typescript": "^3.9.5"
-    },
-    "gitHead": "c361222cfd380037303e838efdeb1374d19dbccf"
+    }
 }

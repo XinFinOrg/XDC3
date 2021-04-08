@@ -1,8 +1,8 @@
 {
     "name": "xdc3-providers-http",
-    "version": "1.3.13401",
+    "version": "1.3.7",
     "description": "Module to handle web3 RPC connections over HTTP.",
-    "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/xdc3-providers-http",
+    "repository": "https://github.com/ethereum/web3.js/tree/1.x/packages/web3-providers-http",
     "license": "LGPL-3.0",
     "engines": {
         "node": ">=8.0.0"
@@ -14,12 +14,11 @@
     "types": "types/index.d.ts",
     "main": "lib/index.js",
     "dependencies": {
-        "xdc3-core-helpers": "1.3.13401",
+        "xdc3-core-helpers": "1.3.7",
         "xhr2-cookies": "1.1.0"
     },
     "devDependencies": {
         "dtslint": "^3.4.1",
         "typescript": "^3.9.5"
-    },
-    "gitHead": "c361222cfd380037303e838efdeb1374d19dbccf"
+    }
 }

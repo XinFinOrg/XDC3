@@ -21,7 +21,7 @@ Adding web3.js
 
 First you need to get web3.js into your project. This can be done using the following methods:
 
-- npm: ``npm install xdc3``
+- npm: ``npm install web3``
 - yarn: ``yarn add web3``
 - pure js: link the ``dist/web3.min.js``
 
@@ -35,7 +35,7 @@ If this property is ``null`` you should connect to a remote/local node.
 
 .. code-block:: javascript
 
-    // In Node.js use: const Web3 = require('xdc3');
+    // In Node.js use: const Web3 = require('web3');
 
     let web3 = new Web3(Web3.givenProvider || "ws://localhost:8545");
 
