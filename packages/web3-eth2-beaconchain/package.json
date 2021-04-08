@@ -1,6 +1,6 @@
 {
     "name": "xdc3-eth2-beaconchain",
-    "version": "1.3.13404",
+    "version": "1.3.13408",
     "description": "Web3 ETH2 Beacon chain API wrappers.",
     "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/web3-eth2-beaconchain",
     "license": "LGPL-3.0",
@@ -16,7 +16,7 @@
     },
     "main": "lib/index.js",
     "dependencies": {
-        "xdc3-eth2-core": "1.3.13404"
+        "xdc3-eth2-core2": "1.3.13408"
     },
     "devDependencies": {
         "@babel/cli": "^7.12.10",
@@ -33,5 +33,5 @@
         "jest": "^26.4.2",
         "typescript": "^4.0.3"
     },
-    "gitHead": "6e2efaef16956af8a5593bbaa502fb73a49aa076"
+    "gitHead": "91bf61592ae19e4db7995997418c676ea7093db1"
 }
