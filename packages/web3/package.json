@@ -1,6 +1,6 @@
 {
     "name": "xdc3",
-    "version": "1.2.135-alpha.0",
+    "version": "1.2.135",
     "description": "Ethereum JavaScript API",
     "repository": "https://github.com/ethereum/web3.js",
     "license": "LGPL-3.0",
@@ -50,13 +50,13 @@
         }
     ],
     "dependencies": {
-        "xdc3-bzz": "1.2.135-alpha.0",
-        "xdc3-core": "1.2.135-alpha.0",
-        "xdc3-eth": "1.2.135-alpha.0",
-        "xdc3-eth-personal": "1.2.135-alpha.0",
-        "xdc3-net": "1.2.135-alpha.0",
-        "xdc3-shh": "1.2.135-alpha.0",
-        "xdc3-utils": "1.2.135-alpha.0"
+        "xdc3-bzz": "1.2.135",
+        "xdc3-core": "1.2.135",
+        "xdc3-eth": "1.2.135",
+        "xdc3-eth-personal": "1.2.135",
+        "xdc3-net": "1.2.135",
+        "xdc3-shh": "1.2.135",
+        "xdc3-utils": "1.2.135"
     },
     "devDependencies": {
         "@types/node": "^12.12.6",
