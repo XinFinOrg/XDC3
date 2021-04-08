@@ -1,6 +1,6 @@
 {
     "name": "xdc3-eth2-core",
-    "version": "1.3.13402",
+    "version": "1.3.13403",
     "description": "Web3 ETH2 core tools for sub-packages. This is an internal package.",
     "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/web3-eth2-core",
     "license": "LGPL-3.0",
