@@ -351,7 +351,7 @@ Released with 1.0.0-beta.37 code base.
 
 ## [Unreleased]
 
-## [1.0.134]
+## [1.2.134]
 
 ### Added
 

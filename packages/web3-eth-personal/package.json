@@ -1,6 +1,6 @@
 {
     "name": "xdc3-eth-personal",
-    "version": "1.0.135-alpha.0",
+    "version": "1.2.134",
     "description": "Web3 module to interact with the Ethereum blockchain accounts stored in the node.",
     "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/xftest3-eth-personal",
     "license": "LGPL-3.0",
@@ -15,11 +15,11 @@
     "main": "lib/index.js",
     "dependencies": {
         "@types/node": "^12.12.6",
-        "xdc3-core": "1.0.135-alpha.0",
-        "xdc3-core-helpers": "1.0.135-alpha.0",
-        "xdc3-core-method": "1.0.135-alpha.0",
-        "xdc3-net": "1.0.135-alpha.0",
-        "xdc3-utils": "1.0.135-alpha.0"
+        "xdc3-core": "1.2.134",
+        "xdc3-core-helpers": "1.2.134",
+        "xdc3-core-method": "1.2.134",
+        "xdc3-net": "1.2.134",
+        "xdc3-utils": "1.2.134"
     },
     "devDependencies": {
         "dtslint": "^3.4.1",
