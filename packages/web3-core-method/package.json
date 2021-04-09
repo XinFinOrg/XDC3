@@ -1,6 +1,6 @@
 {
     "name": "xdc3-core-method",
-    "version": "1.3.13415",
+    "version": "1.3.13416",
     "description": "Creates the methods on the XDC3 modules. This is an internal package for XDC3. ",
     "repository": "https://github.com/XinFinOrg/XDC3/tree/master/packages/web3-core-method",
     "license": "LGPL-3.0",
@@ -16,10 +16,10 @@
     "dependencies": {
         "@ethersproject/transactions": "^5.0.0-beta.135",
         "underscore": "1.9.1",
-        "xdc3-core-helpers": "1.3.13415",
-        "xdc3-core-promievent": "1.3.13415",
-        "xdc3-core-subscriptions": "1.3.13415",
-        "xdc3-utils": "1.3.13415"
+        "xdc3-core-helpers": "1.3.13416",
+        "xdc3-core-promievent": "1.3.13416",
+        "xdc3-core-subscriptions": "1.3.13416",
+        "xdc3-utils": "1.3.13416"
     },
     "devDependencies": {
         "dtslint": "^3.4.1",
