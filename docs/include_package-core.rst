@@ -180,8 +180,8 @@ Configuration
 
 More information for the Http and Websocket provider modules can be found here:
 
-    - `HttpProvider <https://github.com/XinFinOrg/XDC3/tree/1.x/packages/web3-providers-http#usage>`_
-    - `WebsocketProvider <https://github.com/XinFinOrg/XDC3/tree/1.x/packages/web3-providers-ws#usage>`_
+    - `HttpProvider <https://github.com/XinFinOrg/XDC3/tree/master/packages/web3-providers-http#usage>`_
+    - `WebsocketProvider <https://github.com/XinFinOrg/XDC3/tree/master/packages/web3-providers-ws#usage>`_
 
 ------------------------------------------------------------------------------
 
@@ -301,7 +301,7 @@ extend
     web3.bzz.extend(methods)
     ...
 
-Allows extending the web3 modules.
+Allows extending the XDC3 modules.
 
 .. note:: You also have ``*.extend.formatters`` as additional formatter functions to be used for input and output formatting. Please see the `source file <https://github.com/XinFinOrg/XDC3/blob/1.x/packages/web3-core-helpers/src/formatters.js>`_ for function details.
 

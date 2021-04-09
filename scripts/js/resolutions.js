@@ -61,8 +61,8 @@ for ( const mod of web3Modules ){
   targetPackage.resolutions[`*/**/${mod}`] = version;
 }
 
-// Remove any outer-level web3 modules so yarn flat-packs a single
-// set of web3 modules at the outerlevel
+// Remove any outer-level XDC3 modules so yarn flat-packs a single
+// set of XDC3 modules at the outerlevel
 if (targetPackage.devDependencies){
   for ( const mod of web3Modules ){
     delete targetPackage.devDependencies[mod];

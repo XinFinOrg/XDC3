@@ -1,8 +1,8 @@
 {
     "name": "xdc3-eth-personal",
     "version": "1.3.13412",
-    "description": "Web3 module to interact with the Ethereum blockchain accounts stored in the node.",
-    "repository": "https://github.com/XinFinOrg/XDC3/tree/1.x/packages/web3-eth-personal",
+    "description": "XDC3 module to interact with the Ethereum blockchain accounts stored in the node.",
+    "repository": "https://github.com/XinFinOrg/XDC3/tree/master/packages/web3-eth-personal",
     "license": "LGPL-3.0",
     "engines": {
         "node": ">=8.0.0"
