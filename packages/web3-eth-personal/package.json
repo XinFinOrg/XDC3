@@ -1,6 +1,6 @@
 {
     "name": "xdc3-eth-personal",
-    "version": "1.3.13412",
+    "version": "1.3.13414",
     "description": "XDC3 module to interact with the Ethereum blockchain accounts stored in the node.",
     "repository": "https://github.com/XinFinOrg/XDC3/tree/master/packages/web3-eth-personal",
     "license": "LGPL-3.0",
@@ -15,11 +15,11 @@
     "main": "lib/index.js",
     "dependencies": {
         "@types/node": "^12.12.6",
-        "xdc3-core": "1.3.13412",
-        "xdc3-core-helpers": "1.3.13412",
-        "xdc3-core-method": "1.3.13412",
-        "xdc3-net": "1.3.13412",
-        "xdc3-utils": "1.3.13412"
+        "xdc3-core": "1.3.13414",
+        "xdc3-core-helpers": "1.3.13414",
+        "xdc3-core-method": "1.3.13414",
+        "xdc3-net": "1.3.13414",
+        "xdc3-utils": "1.3.13414"
     },
     "devDependencies": {
         "dtslint": "^3.4.1",
