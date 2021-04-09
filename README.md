@@ -8,6 +8,8 @@ So for dapps displaying address its preferred to use `toXdcAddress` function of 
   
 ## TEST
 
+This will run tests for account  creations, logs, contract events & contract interaction.
+
 ```
 mocha test/xdc --exit
 ```
