@@ -88,7 +88,7 @@ var _solidityPack = function (type, value, arraySize) {
 
     if (type === 'bytes') {
 
-        if (value.replace(/^0x/i,'').length % 2 !== 0) {
+        if (value.replace(/^0x/i,'').replace(/^xdc/i,'').length % 2 !== 0) {
             throw new Error('Invalid bytes characters '+ value.length);
         }
 
@@ -124,7 +124,7 @@ var _solidityPack = function (type, value, arraySize) {
             size = 32;
         }
 
-        if (size < 1 || size > 32 || size < value.replace(/^0x/i,'').length / 2 ) {
+        if (size < 1 || size > 32 || size < value.replace(/^0x/i,'').replace(/^xdc/i,'').length / 2 ) {
             throw new Error('Invalid bytes' + size +' for '+ value);
         }
 
