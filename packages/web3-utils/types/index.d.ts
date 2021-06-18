@@ -74,8 +74,8 @@ export function toBN(value: number | string): BN;
 export function toTwosComplement(value: number | string | BN): string;
 export function isAddress(address: string, chainId?: number): boolean;
 export function isXdcAddress(address: string): boolean;
-export function toXdcAddress(address: string): String;
-export function fromXdcAddress(address: string): String;
+export function toXdcAddress(address: string): string;
+export function fromXdcAddress(address: string): string;
 
 export function isHex(hex: Hex): boolean;
 export function isHexStrict(hex: Hex): boolean;
